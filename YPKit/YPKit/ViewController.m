@@ -23,6 +23,14 @@
     .deledate_yp(self)
     .dataSource_yp(self)
     .registerClass_yp(UITableViewCell.class_yp,@"identifier");
+    
+    UIButton *button = UIButton.creatWithFrame_yp(CGRectMake(20, 50, 200, 40))
+    .nomalBackgroundColor_yp(UIColor.redColor)
+    .highlightBackgroundColor_yp(UIColor.blueColor)
+    .nomalTitle_yp(@"NomalTitle")
+    .highlightTitle_yp(@"HighlightedTitle");
+    [self.view addSubview:button];
+    
 }
 
 

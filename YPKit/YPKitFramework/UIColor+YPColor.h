@@ -15,4 +15,5 @@
 - (CGFloat)blue;
 - (CGFloat)alphe;
 
+- (UIImage *(^)(CGSize size))imageWithSize;
 @end

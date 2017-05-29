@@ -26,4 +26,19 @@
     return  CGColorGetComponents(self.CGColor)[3];
 }
 
+- (UIImage *(^)(CGSize size))imageWithSize {
+    return ^(CGSize size) {
+        CGRect rect = CGRectMake(0, 0, size.width, size.height);
+        UIGraphicsBeginImageContext(size);
+        
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGContextSetFillColorWithColor(context, self.CGColor);
+        CGContextFillRect(context, rect);
+        UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+        return theImage;
+    };
+}
 @end

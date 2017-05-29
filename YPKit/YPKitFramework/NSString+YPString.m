@@ -25,7 +25,7 @@
     }
 }
 
-- (NSString *(^(^)(NSString *))(NSString *))concat {
+- (NSString *(^(^)(NSString *))(NSString *))concatSep {
     return ^(NSString *sepeartor) {
         return ^(NSString *appendString) {
             return [NSString stringWithFormat:@"%@%@%@",self,sepeartor,appendString];
@@ -33,6 +33,11 @@
     };
 }
 
+- (NSString *(^)(NSString *))concat {
+    return ^(NSString *appendString) {
+        return [NSString stringWithFormat:@"%@%@",self,appendString];
+    };
+}
 
 - (CGFloat)heightForWidth:(CGFloat)width {
     return [self sizeForWidth:width].height;

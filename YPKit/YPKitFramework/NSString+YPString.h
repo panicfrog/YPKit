@@ -12,7 +12,8 @@
 
 - (NSAttributedString *)htmlString;
 - (NSString *)filterEmpty;
-- (NSString *(^(^)(NSString *))(NSString *))concat;
+- (NSString *(^(^)(NSString *))(NSString *))concatSep;
+- (NSString *(^)(NSString *))concat;
 
 - (CGFloat)heightForWidth:(CGFloat)width;
 - (CGSize)sizeForWidth:(CGFloat)width;

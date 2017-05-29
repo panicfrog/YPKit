@@ -31,8 +31,23 @@
     .highlightTitle_yp(@"HighlightedTitle");
     [self.view addSubview:button];
     
+   NSNumber *result = @[@1,@2].reduce(@3)(^(NSNumber *a,NSNumber *b) {
+        return @(a.integerValue + b.integerValue);
+    });
+    
+    NSString *string = @[@"one",@"two",@"three"].reduce(@"zero")(^(NSString *$0, NSString *$1){
+        return $0.concatSep(@"-")($1);
+    });
+    
+    NSLog(@"%ld,%@",(long)result.integerValue,string);
 }
 
+/*
+ 
+ 'NSString *(^(^)(NSString *, NSString *))(NSString *)'
+ 'id (^)( id, id)'
+ 
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

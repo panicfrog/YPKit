@@ -9,8 +9,6 @@
 #import "NSArray+YPArray.h"
 #import <objc/runtime.h>
 
-typedef id(^reduceBlock)(id,id);
-
 extern NSMethodSignature *YPMethodSignature(id);
 extern int YPArgCount(id);
 

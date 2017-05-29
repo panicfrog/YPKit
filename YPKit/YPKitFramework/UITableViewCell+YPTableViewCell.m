@@ -13,5 +13,8 @@
 + (UINib *)nib{
     return [UINib nibWithNibName:[NSString stringWithUTF8String:object_getClassName(self)] bundle:nil];
 }
++ (Class)class_yp {
+    return [self class];
+}
 
 @end

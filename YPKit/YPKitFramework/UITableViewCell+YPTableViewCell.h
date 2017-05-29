@@ -11,5 +11,5 @@
 @interface UITableViewCell (YPTableViewCell)
 
 + (UINib *)nib;
-
++ (Class)class_yp;
 @end

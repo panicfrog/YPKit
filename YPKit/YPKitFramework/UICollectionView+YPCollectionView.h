@@ -10,9 +10,21 @@
 
 @interface UICollectionView (YPCollectionView)
 
-+ (instancetype)collectionViewWithFlowlayout:(UICollectionViewFlowLayout *)l2FlowLayout
-                                       frame:(CGRect)frame
-                                    delegate:(NSObject <UICollectionViewDelegate>*)delegate
-                                  dataSource:(NSObject <UICollectionViewDataSource>*)dataSource;
+#pragma mark -
++ (UICollectionView *(^)(CGRect frame, UICollectionViewFlowLayout *))creatWithFrameAndLayout_yp;
+
+#pragma mark -
+- (UICollectionView *(^)(id<UICollectionViewDelegate>))delegate_yp;
+- (UICollectionView *(^)(id<UICollectionViewDataSource>))dataSource_yp;
+
+#pragma mark -
+- (UICollectionView *(^)(Class,NSString *))registerClassAndIdentifier_yp;
+- (UICollectionView *(^)(UINib *,NSString *))registerNibAndIdentifier_yp;
+- (UICollectionView *(^)(Class,NSString *,NSString *))registerClassAndViewKindAndIdentifier_yp;
+- (UICollectionView *(^)(UINib *,NSString *,NSString *))registerNibAndViewKindAndIdentifier_yp;
+
+#pragma mark -
+- (UICollectionView *(^)())cellForItemAtIndexPath_yp;
+
 
 @end

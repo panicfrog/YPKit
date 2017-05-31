@@ -10,13 +10,66 @@
 
 @implementation UICollectionView (YPCollectionView)
 
-//+ (instancetype)collectionViewWithFlowlayout:(UICollectionViewFlowLayout *)l2FlowLayout frame:(CGRect)frame delegate:(NSObject <UICollectionViewDelegate>*)delegate dataSource:(NSObject <UICollectionViewDataSource>*)dataSource{
-//    
-//    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:l2FlowLayout];
-//    collectionView.delegate = delegate;
-//    collectionView.dataSource = dataSource;
-//    return collectionView;
-//    
-//}
+//创建
++ (UICollectionView *(^)(CGRect frame, UICollectionViewFlowLayout *))creatWithFrameAndLayout_yp{
+    return ^(CGRect frame, UICollectionViewFlowLayout *layout){
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
+        return collectionView;
+    };
+}
 
+
+//Delegate
+- (UICollectionView *(^)(id<UICollectionViewDelegate>))delegate_yp {
+    return ^(id <UICollectionViewDelegate>deledate) {
+        self.delegate = deledate;
+        return self;
+    };
+}
+
+- (UICollectionView *(^)(id<UICollectionViewDataSource>))dataSource_yp {
+    return ^(id<UICollectionViewDataSource>dataSource) {
+        self.dataSource = dataSource;
+        return self;
+    };
+}
+
+
+//Register
+- (UICollectionView *(^)(Class,NSString *))registerClassAndIdentifier_yp {
+    return ^(Class class, NSString * identifier) {
+        [self registerClass:class forCellWithReuseIdentifier:identifier];
+        return self;
+    };
+}
+
+- (UICollectionView *(^)(Class,NSString *,NSString *))registerClassAndViewKindAndIdentifier_yp {
+    return ^(Class class, NSString *viewKind, NSString *identifier) {
+        [self registerClass:class forSupplementaryViewOfKind:viewKind withReuseIdentifier:identifier];
+        return self;
+    };
+}
+
+- (UICollectionView *(^)(UINib *,NSString *))registerNibAndIdentifier_yp {
+    return ^(UINib *nib, NSString *identifier) {
+        [self registerNib:nib forCellWithReuseIdentifier:identifier];
+        return self;
+    };
+}
+
+- (UICollectionView *(^)(UINib *,NSString *,NSString *))registerNibAndViewKindAndIdentifier_yp {
+    return ^(UINib *nib, NSString *viewKind, NSString *identifier) {
+        [self registerNib:nib forSupplementaryViewOfKind:viewKind withReuseIdentifier:identifier];
+        return self;
+    };
+}
+
+
+//Cell At IndexPath
+- (UICollectionView *(^)())cellForItemAtIndexPath_yp {
+    return ^(NSIndexPath *indexPath) {
+        [self cellForItemAtIndexPath:indexPath];
+        return self;
+    };
+}
 @end

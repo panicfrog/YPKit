@@ -29,6 +29,7 @@
 		6DDC38781EDBD60D00A2F04D /* YPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38671EDBD60D00A2F04D /* YPBlock.m */; };
 		6DDC38791EDBD60D00A2F04D /* YPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38691EDBD60D00A2F04D /* YPKit.m */; };
 		6DDC38A81EE0834600A2F04D /* NSURL+YPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38A71EE0834600A2F04D /* NSURL+YPURL.m */; };
+		6DDC38AB1EE08A8E00A2F04D /* UIView+YPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38AA1EE08A8E00A2F04D /* UIView+YPView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		6DDC38691EDBD60D00A2F04D /* YPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPKit.m; sourceTree = "<group>"; };
 		6DDC38A61EE0834600A2F04D /* NSURL+YPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YPURL.h"; sourceTree = "<group>"; };
 		6DDC38A71EE0834600A2F04D /* NSURL+YPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YPURL.m"; sourceTree = "<group>"; };
+		6DDC38A91EE08A8E00A2F04D /* UIView+YPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YPView.h"; sourceTree = "<group>"; };
+		6DDC38AA1EE08A8E00A2F04D /* UIView+YPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YPView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				6DDC385B1EDBD60D00A2F04D /* UIColor+YPColor.m */,
 				6DDC385C1EDBD60D00A2F04D /* UIImage+YPImage.h */,
 				6DDC385D1EDBD60D00A2F04D /* UIImage+YPImage.m */,
+				6DDC38A91EE08A8E00A2F04D /* UIView+YPView.h */,
+				6DDC38AA1EE08A8E00A2F04D /* UIView+YPView.m */,
 				6DDC385E1EDBD60D00A2F04D /* UILabel+YPLabel.h */,
 				6DDC385F1EDBD60D00A2F04D /* UILabel+YPLabel.m */,
 				6DDC38601EDBD60D00A2F04D /* UITableView+YPTableView.h */,
@@ -248,6 +253,7 @@
 				6DDC38711EDBD60D00A2F04D /* UICollectionViewCell+YPCell.m in Sources */,
 				6DDC38791EDBD60D00A2F04D /* YPKit.m in Sources */,
 				6DDC38341EDBD45700A2F04D /* main.m in Sources */,
+				6DDC38AB1EE08A8E00A2F04D /* UIView+YPView.m in Sources */,
 				6DDC386F1EDBD60D00A2F04D /* UIButton+YPButton.m in Sources */,
 				6DDC38A81EE0834600A2F04D /* NSURL+YPURL.m in Sources */,
 				6DDC38721EDBD60D00A2F04D /* UIColor+YPColor.m in Sources */,

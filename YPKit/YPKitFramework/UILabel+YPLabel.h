@@ -10,6 +10,10 @@
 
 @interface UILabel (YPLabel)
 
-+ (instancetype)labelWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text;
-+ (instancetype)labelWithTextColor:(UIColor *)textColor font:(UIFont *)font;
++ (instancetype)labelWithTextColor:(UIColor *)textColor
+                              font:(UIFont *)font
+                              text:(NSString *)text;
+
++ (instancetype)labelWithTextColor:(UIColor *)textColor
+                              font:(UIFont *)font;
 @end

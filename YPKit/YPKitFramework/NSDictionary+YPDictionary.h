@@ -17,4 +17,6 @@
 //- (NSDictionary *(^)(NSString *key,...))pick;
 #pragma mark 将字典展平成一个数组
 - (NSArray *)toArray ;
+- (NSURL *(^)(NSURL *))toGetUrl;
+- (NSString *)toUrlParam;
 @end

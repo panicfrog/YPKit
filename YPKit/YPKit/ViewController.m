@@ -48,6 +48,8 @@
     NSURL *url = [NSURL URLWithString:@"https://www.baidu.com?a=1&b=2&c=3"];
     NSDictionary *params = url.params;
     NSLog(@"%@",params);
+    NSURL *getUrl = params.toGetUrl([NSURL URLWithString:@"https://www.baidu.com"]);
+    NSLog(@"%@",getUrl.absoluteString);
 }
 
 - (void)didReceiveMemoryWarning {

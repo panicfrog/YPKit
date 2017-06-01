@@ -6,6 +6,8 @@
 //  Copyright © 2015年  yeyongping. All rights reserved.
 //
 #import "NSDictionary+YPDictionary.h"
+#import "NSArray+YPArray.h"
+#import "NSString+YPString.h"
 
 @implementation NSDictionary (YPDictionary)
 
@@ -47,6 +49,21 @@
         [arrm addObject:@[key,obj]];
     }];
     return arrm.copy;
+}
+
+- (NSURL *(^)(NSURL *))toGetUrl {
+    return ^(NSURL *baseUrl) {
+        NSString *baseUrlString = baseUrl.absoluteString;
+        ;
+       NSString *urlString = baseUrlString.concatSep(@"?")(self.toUrlParam);
+        return [NSURL URLWithString:urlString];
+    };
+}
+
+- (NSString *)toUrlParam {
+    return self.toArray
+    .map(^(NSArray *objArr) {return objArr.join(@"=");})
+    .join(@"&");
 }
 
 @end

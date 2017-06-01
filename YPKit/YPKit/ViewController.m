@@ -44,6 +44,10 @@
     NSArray *arr = @[@1,@2].concat(@[@"some",@"one"]);
     
     NSLog(@"%ld\n,reduceString: %@\n joinConcatString: %@\n arr: %@",(long)result.integerValue,reduceString,joinConcatString,arr.description);
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com?a=1&b=2&c=3"];
+    NSDictionary *params = url.params;
+    NSLog(@"%@",params);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

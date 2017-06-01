@@ -28,6 +28,7 @@
 		6DDC38771EDBD60D00A2F04D /* UITextView+YPTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38651EDBD60D00A2F04D /* UITextView+YPTextView.m */; };
 		6DDC38781EDBD60D00A2F04D /* YPBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38671EDBD60D00A2F04D /* YPBlock.m */; };
 		6DDC38791EDBD60D00A2F04D /* YPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38691EDBD60D00A2F04D /* YPKit.m */; };
+		6DDC38A81EE0834600A2F04D /* NSURL+YPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38A71EE0834600A2F04D /* NSURL+YPURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		6DDC38671EDBD60D00A2F04D /* YPBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPBlock.m; sourceTree = "<group>"; };
 		6DDC38681EDBD60D00A2F04D /* YPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPKit.h; sourceTree = "<group>"; };
 		6DDC38691EDBD60D00A2F04D /* YPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPKit.m; sourceTree = "<group>"; };
+		6DDC38A61EE0834600A2F04D /* NSURL+YPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YPURL.h"; sourceTree = "<group>"; };
+		6DDC38A71EE0834600A2F04D /* NSURL+YPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YPURL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				6DDC385F1EDBD60D00A2F04D /* UILabel+YPLabel.m */,
 				6DDC38601EDBD60D00A2F04D /* UITableView+YPTableView.h */,
 				6DDC38611EDBD60D00A2F04D /* UITableView+YPTableView.m */,
+				6DDC38A61EE0834600A2F04D /* NSURL+YPURL.h */,
+				6DDC38A71EE0834600A2F04D /* NSURL+YPURL.m */,
 				6DDC38621EDBD60D00A2F04D /* UITableViewCell+YPTableViewCell.h */,
 				6DDC38631EDBD60D00A2F04D /* UITableViewCell+YPTableViewCell.m */,
 				6DDC38641EDBD60D00A2F04D /* UITextView+YPTextView.h */,
@@ -244,6 +249,7 @@
 				6DDC38791EDBD60D00A2F04D /* YPKit.m in Sources */,
 				6DDC38341EDBD45700A2F04D /* main.m in Sources */,
 				6DDC386F1EDBD60D00A2F04D /* UIButton+YPButton.m in Sources */,
+				6DDC38A81EE0834600A2F04D /* NSURL+YPURL.m in Sources */,
 				6DDC38721EDBD60D00A2F04D /* UIColor+YPColor.m in Sources */,
 				6DDC38761EDBD60D00A2F04D /* UITableViewCell+YPTableViewCell.m in Sources */,
 				6DDC38771EDBD60D00A2F04D /* UITextView+YPTextView.m in Sources */,
@@ -409,6 +415,7 @@
 				6DDC38481EDBD45800A2F04D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

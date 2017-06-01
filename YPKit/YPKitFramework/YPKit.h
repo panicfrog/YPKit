@@ -21,4 +21,5 @@
 #import "NSDate+YPDate.h"
 #import "NSDictionary+YPDictionary.h"
 #import "UITableView+YPTableView.h"
+#import "NSURL+YPURL.h"
 

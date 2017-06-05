@@ -79,6 +79,9 @@
 
 - (void)tapGestureAction:(UITapGestureRecognizer *)tapGesture {
     if (self.touchDismiss) {
+        if (_alertView && CGRectContainsPoint(_alertView.frame, [tapGesture locationInView:self.view])) {
+            return;
+        }
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0910B0241EE4FD7B009FB262 /* YPAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B0151EE4FD7B009FB262 /* YPAlertViewController.m */; };
+		0910B0251EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B0171EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.m */; };
+		0910B0261EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B0191EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.m */; };
+		0910B0271EE4FD7B009FB262 /* YPPresentTransitionFromLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B01B1EE4FD7B009FB262 /* YPPresentTransitionFromLeft.m */; };
+		0910B0281EE4FD7B009FB262 /* YPPresentTransitionFromRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B01D1EE4FD7B009FB262 /* YPPresentTransitionFromRight.m */; };
+		0910B0291EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B01F1EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.m */; };
+		0910B02A1EE4FD7B009FB262 /* YPPresentTransitionReturnRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B0211EE4FD7B009FB262 /* YPPresentTransitionReturnRight.m */; };
+		0910B02B1EE4FD7B009FB262 /* YPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910B0231EE4FD7B009FB262 /* YPSlider.m */; };
 		6DDC38341EDBD45700A2F04D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38331EDBD45700A2F04D /* main.m */; };
 		6DDC38371EDBD45700A2F04D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38361EDBD45700A2F04D /* AppDelegate.m */; };
 		6DDC383A1EDBD45700A2F04D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38391EDBD45700A2F04D /* ViewController.m */; };
@@ -33,6 +41,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0910B0141EE4FD7B009FB262 /* YPAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAlertViewController.h; sourceTree = "<group>"; };
+		0910B0151EE4FD7B009FB262 /* YPAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAlertViewController.m; sourceTree = "<group>"; };
+		0910B0161EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAlertviewTransitionEasyIn.h; sourceTree = "<group>"; };
+		0910B0171EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAlertviewTransitionEasyIn.m; sourceTree = "<group>"; };
+		0910B0181EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAlertviewTransitionEasyOut.h; sourceTree = "<group>"; };
+		0910B0191EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAlertviewTransitionEasyOut.m; sourceTree = "<group>"; };
+		0910B01A1EE4FD7B009FB262 /* YPPresentTransitionFromLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPresentTransitionFromLeft.h; sourceTree = "<group>"; };
+		0910B01B1EE4FD7B009FB262 /* YPPresentTransitionFromLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPresentTransitionFromLeft.m; sourceTree = "<group>"; };
+		0910B01C1EE4FD7B009FB262 /* YPPresentTransitionFromRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPresentTransitionFromRight.h; sourceTree = "<group>"; };
+		0910B01D1EE4FD7B009FB262 /* YPPresentTransitionFromRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPresentTransitionFromRight.m; sourceTree = "<group>"; };
+		0910B01E1EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPresentTransitionReturnLeft.h; sourceTree = "<group>"; };
+		0910B01F1EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPresentTransitionReturnLeft.m; sourceTree = "<group>"; };
+		0910B0201EE4FD7B009FB262 /* YPPresentTransitionReturnRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPresentTransitionReturnRight.h; sourceTree = "<group>"; };
+		0910B0211EE4FD7B009FB262 /* YPPresentTransitionReturnRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPresentTransitionReturnRight.m; sourceTree = "<group>"; };
+		0910B0221EE4FD7B009FB262 /* YPSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSlider.h; sourceTree = "<group>"; };
+		0910B0231EE4FD7B009FB262 /* YPSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSlider.m; sourceTree = "<group>"; };
 		6DDC382F1EDBD45700A2F04D /* YPKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDC38331EDBD45700A2F04D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DDC38351EDBD45700A2F04D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +158,22 @@
 		6DDC38491EDBD48F00A2F04D /* YPKitFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0910B0141EE4FD7B009FB262 /* YPAlertViewController.h */,
+				0910B0151EE4FD7B009FB262 /* YPAlertViewController.m */,
+				0910B0161EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.h */,
+				0910B0171EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.m */,
+				0910B0181EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.h */,
+				0910B0191EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.m */,
+				0910B01A1EE4FD7B009FB262 /* YPPresentTransitionFromLeft.h */,
+				0910B01B1EE4FD7B009FB262 /* YPPresentTransitionFromLeft.m */,
+				0910B01C1EE4FD7B009FB262 /* YPPresentTransitionFromRight.h */,
+				0910B01D1EE4FD7B009FB262 /* YPPresentTransitionFromRight.m */,
+				0910B01E1EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.h */,
+				0910B01F1EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.m */,
+				0910B0201EE4FD7B009FB262 /* YPPresentTransitionReturnRight.h */,
+				0910B0211EE4FD7B009FB262 /* YPPresentTransitionReturnRight.m */,
+				0910B0221EE4FD7B009FB262 /* YPSlider.h */,
+				0910B0231EE4FD7B009FB262 /* YPSlider.m */,
 				6DDC384A1EDBD60D00A2F04D /* NSArray+YPArray.h */,
 				6DDC384B1EDBD60D00A2F04D /* NSArray+YPArray.m */,
 				6DDC384C1EDBD60D00A2F04D /* NSDate+YPDate.h */,
@@ -245,17 +285,25 @@
 			files = (
 				6DDC386E1EDBD60D00A2F04D /* NSString+YPString.m in Sources */,
 				6DDC383A1EDBD45700A2F04D /* ViewController.m in Sources */,
+				0910B0251EE4FD7B009FB262 /* YPAlertviewTransitionEasyIn.m in Sources */,
 				6DDC38371EDBD45700A2F04D /* AppDelegate.m in Sources */,
+				0910B0271EE4FD7B009FB262 /* YPPresentTransitionFromLeft.m in Sources */,
 				6DDC38751EDBD60D00A2F04D /* UITableView+YPTableView.m in Sources */,
+				0910B0281EE4FD7B009FB262 /* YPPresentTransitionFromRight.m in Sources */,
 				6DDC38701EDBD60D00A2F04D /* UICollectionView+YPCollectionView.m in Sources */,
+				0910B0291EE4FD7B009FB262 /* YPPresentTransitionReturnLeft.m in Sources */,
 				6DDC38731EDBD60D00A2F04D /* UIImage+YPImage.m in Sources */,
 				6DDC38741EDBD60D00A2F04D /* UILabel+YPLabel.m in Sources */,
 				6DDC38711EDBD60D00A2F04D /* UICollectionViewCell+YPCell.m in Sources */,
+				0910B0241EE4FD7B009FB262 /* YPAlertViewController.m in Sources */,
+				0910B02B1EE4FD7B009FB262 /* YPSlider.m in Sources */,
 				6DDC38791EDBD60D00A2F04D /* YPKit.m in Sources */,
 				6DDC38341EDBD45700A2F04D /* main.m in Sources */,
 				6DDC38AB1EE08A8E00A2F04D /* UIView+YPView.m in Sources */,
 				6DDC386F1EDBD60D00A2F04D /* UIButton+YPButton.m in Sources */,
+				0910B02A1EE4FD7B009FB262 /* YPPresentTransitionReturnRight.m in Sources */,
 				6DDC38A81EE0834600A2F04D /* NSURL+YPURL.m in Sources */,
+				0910B0261EE4FD7B009FB262 /* YPAlertviewTransitionEasyOut.m in Sources */,
 				6DDC38721EDBD60D00A2F04D /* UIColor+YPColor.m in Sources */,
 				6DDC38761EDBD60D00A2F04D /* UITableViewCell+YPTableViewCell.m in Sources */,
 				6DDC38771EDBD60D00A2F04D /* UITextView+YPTextView.m in Sources */,

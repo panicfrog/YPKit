@@ -18,6 +18,15 @@
 
 @implementation YPSlider
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *hitTestView = [super hitTest:point withEvent:event];
+    if (!CGRectContainsPoint(self.slider.frame,point) && CGRectContainsPoint(self.bounds, point)) {
+        return nil;
+    }
+    return hitTestView;
+}
+
+
 + (instancetype)sliderWithFrame:(CGRect)frame sliderToRight:(void(^)(BOOL))sliderHandle{
     CGFloat height = CGRectGetHeight(frame);
     CGFloat width = CGRectGetWidth(frame);
@@ -48,7 +57,7 @@
     [self addSubview:leftBackgroundView];
     
     UIView *slider = [[UIView alloc] initWithFrame:CGRectMake(width - height, 0, height, height)];
-    [self addSubview:slider];
+    _slider = slider;
     slider.backgroundColor = [UIColor whiteColor];
     slider.layer.cornerRadius = height/2;
     slider.layer.masksToBounds = YES;

@@ -50,6 +50,13 @@
     NSLog(@"%@",params);
     NSURL *getUrl = params.toGetUrl([NSURL URLWithString:@"https://www.baidu.com"]);
     NSLog(@"%@",getUrl.absoluteString);
+    
+    NSString *sandBoxString = @"sdjafjoiewngenlkasjdfpawenkjweqkehkqhersbfjkdsa";
+    NSString *redString = [[NSString alloc] initWithData:[YPSandBox readFileFromDocumentPath:@"test"] encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",redString);
+    
+    [YPSandBox writeFile:[sandBoxString dataUsingEncoding:NSUTF8StringEncoding] documentSuffixPath:@"test"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

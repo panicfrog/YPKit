@@ -23,6 +23,9 @@
 #pragma mark 在Document文件夹中读取数据
 + (NSData *)readFileFromDocumentPath:(NSString *)suffixPath;
 #pragma mark 在Document文件夹中写入数据
-+ (void)writeFile:(NSData *)data documentSuffixPath:(NSString *)suffixPath;
++ (BOOL)writeFile:(NSData *)data documentSuffixPath:(NSString *)suffixPath;
+#pragma mark 删除Document文件下的一个文件
++ (void)removeDocumentFile:(NSString *)suffixPath error:(NSError *)error;
 
 @end
+

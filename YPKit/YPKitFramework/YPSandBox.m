@@ -7,7 +7,6 @@
 //
 
 #import "YPSandBox.h"
-#import "NSString+YPString.h"
 
 @implementation YPSandBox
 
@@ -23,7 +22,7 @@
     return NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject;
 }
 + (NSString *)catchesDirectory {
-  return NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
+    return NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
 }
 
 
@@ -31,12 +30,18 @@
     return NSTemporaryDirectory();
 }
 
+
 + (NSData *)readFileFromDocumentPath:(NSString *)suffixPath {
     return [NSData dataWithContentsOfFile:[self documentsDirectory].concatSep(@"/")(suffixPath)];
 }
++ (BOOL)writeFile:(NSData *)data documentSuffixPath:(NSString *)suffixPath {
+    return [data writeToFile:[self documentsDirectory].concatSep(@"/")(suffixPath) atomically:YES];
+}
 
-+ (void)writeFile:(NSData *)data documentSuffixPath:(NSString *)suffixPath {
-    [data writeToFile:[self documentsDirectory].concatSep(@"/")(suffixPath) atomically:YES];
+
++ (void)removeDocumentFile:(NSString *)suffixPath error:(NSError *)error{
+    [[NSFileManager defaultManager] removeItemAtPath:[self documentsDirectory].concatSep(@"/")(suffixPath) error:&error];
 }
 
 @end
+

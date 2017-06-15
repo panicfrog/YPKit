@@ -14,7 +14,7 @@
 @property (weak, nonatomic) UIView *leftBackgroundView;
 @property (copy, nonatomic) void(^sliderHandle)( BOOL);
 @property (weak, nonatomic) UILabel *titleLabel;
-
+@property (assign, nonatomic) BOOL isRight;
 @end
 
 @implementation YPSlider
@@ -31,6 +31,7 @@
 + (instancetype)sliderWithFrame:(CGRect)frame sliderToRight:(void(^)(BOOL))sliderHandle{
     YPSlider *sliderView = [[self alloc] initWithFrame:frame];
     sliderView.sliderHandle = sliderHandle;
+    sliderView.isRight = NO;
     return sliderView;
 }
 
@@ -98,15 +99,33 @@
     }
 }
 
+#pragma mark - scrollView delegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     CGFloat x = scrollView.contentOffset.x;
     if (0 == x) {
-        if (_sliderHandle) {
+        if (_sliderHandle && !_isRight) {
             _sliderHandle(YES);
+            _isRight = YES;
         }
-    } else if (CGRectGetWidth(scrollView.frame) - CGRectGetHeight(scrollView.frame) == x) {
+    } else if (CGRectGetWidth(scrollView.frame) - CGRectGetHeight(scrollView.frame) == x && _isRight) {
         if (_sliderHandle) {
             _sliderHandle(NO);
+            _isRight = NO;
+        }
+    }
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    CGFloat x = scrollView.contentOffset.x;
+    if (0 == x) {
+        if (_sliderHandle && !_isRight) {
+            _sliderHandle(YES);
+            _isRight = YES;
+        }
+    } else if (CGRectGetWidth(scrollView.frame) - CGRectGetHeight(scrollView.frame) == x && _isRight) {
+        if (_sliderHandle) {
+            _sliderHandle(NO);
+            _isRight = NO;
         }
     }
 }

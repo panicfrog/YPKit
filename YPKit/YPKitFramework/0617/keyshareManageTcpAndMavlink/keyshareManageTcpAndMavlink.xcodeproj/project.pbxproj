@@ -1,0 +1,1206 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36DDE87E1D010EC800B34C8D /* MavlinkProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36DDE87D1D010EC800B34C8D /* MavlinkProtocol.h */; };
+		36DDE8801D010EC800B34C8D /* MavlinkProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDE87F1D010EC800B34C8D /* MavlinkProtocol.m */; };
+		36DDEA141D01104800B34C8D /* keyshareTcpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDEA131D01104800B34C8D /* keyshareTcpSocket.m */; };
+		F6452B921EEAE27C00AFE7EB /* MVMavlink.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AC51EEAE27C00AFE7EB /* MVMavlink.m */; };
+		F6452B931EEAE27C00AFE7EB /* MVMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AC71EEAE27C00AFE7EB /* MVMessage.m */; };
+		F6452B941EEAE27C00AFE7EB /* MVMessageAhrs.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AC91EEAE27C00AFE7EB /* MVMessageAhrs.m */; };
+		F6452B951EEAE27C00AFE7EB /* MVMessageApAdc.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ACB1EEAE27C00AFE7EB /* MVMessageApAdc.m */; };
+		F6452B961EEAE27C00AFE7EB /* MVMessageAttitude.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ACD1EEAE27C00AFE7EB /* MVMessageAttitude.m */; };
+		F6452B971EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ACF1EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.m */; };
+		F6452B981EEAE27C00AFE7EB /* MVMessageAuthKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AD11EEAE27C00AFE7EB /* MVMessageAuthKey.m */; };
+		F6452B991EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AD31EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.m */; };
+		F6452B9A1EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AD51EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.m */; };
+		F6452B9B1EEAE27C00AFE7EB /* MVMessageCommandAck.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AD71EEAE27C00AFE7EB /* MVMessageCommandAck.m */; };
+		F6452B9C1EEAE27C00AFE7EB /* MVMessageCommandLong.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AD91EEAE27C00AFE7EB /* MVMessageCommandLong.m */; };
+		F6452B9D1EEAE27C00AFE7EB /* MVMessageDataStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ADB1EEAE27C00AFE7EB /* MVMessageDataStream.m */; };
+		F6452B9E1EEAE27C00AFE7EB /* MVMessageDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ADD1EEAE27C00AFE7EB /* MVMessageDebug.m */; };
+		F6452B9F1EEAE27C00AFE7EB /* MVMessageDebugVect.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452ADF1EEAE27C00AFE7EB /* MVMessageDebugVect.m */; };
+		F6452BA01EEAE27C00AFE7EB /* MVMessageDigicamConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AE11EEAE27C00AFE7EB /* MVMessageDigicamConfigure.m */; };
+		F6452BA11EEAE27C00AFE7EB /* MVMessageDigicamControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AE31EEAE27C00AFE7EB /* MVMessageDigicamControl.m */; };
+		F6452BA21EEAE27C00AFE7EB /* MVMessageexceute.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AE51EEAE27C00AFE7EB /* MVMessageexceute.m */; };
+		F6452BA31EEAE27C00AFE7EB /* MVMessageexceutereturn.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AE71EEAE27C00AFE7EB /* MVMessageexceutereturn.m */; };
+		F6452BA41EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AE91EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.m */; };
+		F6452BA51EEAE27C00AFE7EB /* MVMessageFencePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AEB1EEAE27C00AFE7EB /* MVMessageFencePoint.m */; };
+		F6452BA61EEAE27C00AFE7EB /* MVMessageFenceStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AED1EEAE27C00AFE7EB /* MVMessageFenceStatus.m */; };
+		F6452BA71EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AEF1EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.m */; };
+		F6452BA81EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AF11EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.m */; };
+		F6452BA91EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AF31EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.m */; };
+		F6452BAA1EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AF51EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.m */; };
+		F6452BAB1EEAE27C00AFE7EB /* MVMessageGpsRawInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AF71EEAE27C00AFE7EB /* MVMessageGpsRawInt.m */; };
+		F6452BAC1EEAE27C00AFE7EB /* MVMessageGpsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AF91EEAE27C00AFE7EB /* MVMessageGpsStatus.m */; };
+		F6452BAD1EEAE27C00AFE7EB /* MVMessageHeartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AFB1EEAE27C00AFE7EB /* MVMessageHeartbeat.m */; };
+		F6452BAE1EEAE27D00AFE7EB /* MVMessageHilControls.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AFD1EEAE27C00AFE7EB /* MVMessageHilControls.m */; };
+		F6452BAF1EEAE27D00AFE7EB /* MVMessageHilRcInputsRaw.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452AFF1EEAE27C00AFE7EB /* MVMessageHilRcInputsRaw.m */; };
+		F6452BB01EEAE27D00AFE7EB /* MVMessageHilState.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B011EEAE27C00AFE7EB /* MVMessageHilState.m */; };
+		F6452BB11EEAE27D00AFE7EB /* MVMessageHwstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B031EEAE27C00AFE7EB /* MVMessageHwstatus.m */; };
+		F6452BB21EEAE27D00AFE7EB /* MVMessagek2compasscali.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B051EEAE27C00AFE7EB /* MVMessagek2compasscali.m */; };
+		F6452BB31EEAE27D00AFE7EB /* MVMessagek2message.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B071EEAE27C00AFE7EB /* MVMessagek2message.m */; };
+		F6452BB41EEAE27D00AFE7EB /* MVMessagek2messageack.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B091EEAE27C00AFE7EB /* MVMessagek2messageack.m */; };
+		F6452BB51EEAE27D00AFE7EB /* MVMessageLocalPositionNed.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B0B1EEAE27C00AFE7EB /* MVMessageLocalPositionNed.m */; };
+		F6452BB61EEAE27D00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B0D1EEAE27C00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.m */; };
+		F6452BB71EEAE27D00AFE7EB /* MVMessageLocalPositionSetpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B0F1EEAE27C00AFE7EB /* MVMessageLocalPositionSetpoint.m */; };
+		F6452BB81EEAE27D00AFE7EB /* MVMessageLogData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B111EEAE27C00AFE7EB /* MVMessageLogData.m */; };
+		F6452BB91EEAE27D00AFE7EB /* MVMessageLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B131EEAE27C00AFE7EB /* MVMessageLogEntry.m */; };
+		F6452BBA1EEAE27D00AFE7EB /* MVMessageLogRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B151EEAE27C00AFE7EB /* MVMessageLogRequestData.m */; };
+		F6452BBB1EEAE27D00AFE7EB /* MVMessageLogRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B171EEAE27C00AFE7EB /* MVMessageLogRequestList.m */; };
+		F6452BBC1EEAE27D00AFE7EB /* MVMessageManualControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B191EEAE27C00AFE7EB /* MVMessageManualControl.m */; };
+		F6452BBD1EEAE27D00AFE7EB /* MVMessageMeminfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B1B1EEAE27C00AFE7EB /* MVMessageMeminfo.m */; };
+		F6452BBE1EEAE27D00AFE7EB /* MVMessageMemoryVect.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B1D1EEAE27C00AFE7EB /* MVMessageMemoryVect.m */; };
+		F6452BBF1EEAE27D00AFE7EB /* MVMessagemission_message.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B1F1EEAE27C00AFE7EB /* MVMessagemission_message.m */; };
+		F6452BC01EEAE27D00AFE7EB /* MVMessageMissionAck.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B211EEAE27C00AFE7EB /* MVMessageMissionAck.m */; };
+		F6452BC11EEAE27D00AFE7EB /* MVMessageMissionClearAll.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B231EEAE27C00AFE7EB /* MVMessageMissionClearAll.m */; };
+		F6452BC21EEAE27D00AFE7EB /* MVMessageMissionCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B251EEAE27C00AFE7EB /* MVMessageMissionCount.m */; };
+		F6452BC31EEAE27D00AFE7EB /* MVMessageMissionCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B271EEAE27C00AFE7EB /* MVMessageMissionCurrent.m */; };
+		F6452BC41EEAE27D00AFE7EB /* MVMessageMissionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B291EEAE27C00AFE7EB /* MVMessageMissionItem.m */; };
+		F6452BC51EEAE27D00AFE7EB /* MVMessageMissionItemReached.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B2B1EEAE27C00AFE7EB /* MVMessageMissionItemReached.m */; };
+		F6452BC61EEAE27D00AFE7EB /* MVMessageMissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B2D1EEAE27C00AFE7EB /* MVMessageMissionRequest.m */; };
+		F6452BC71EEAE27D00AFE7EB /* MVMessageMissionRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B2F1EEAE27C00AFE7EB /* MVMessageMissionRequestList.m */; };
+		F6452BC81EEAE27D00AFE7EB /* MVMessageMissionRequestPartialList.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B311EEAE27C00AFE7EB /* MVMessageMissionRequestPartialList.m */; };
+		F6452BC91EEAE27D00AFE7EB /* MVMessageMissionSetCurrent.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B331EEAE27C00AFE7EB /* MVMessageMissionSetCurrent.m */; };
+		F6452BCA1EEAE27D00AFE7EB /* MVMessageMissionWritePartialList.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B351EEAE27C00AFE7EB /* MVMessageMissionWritePartialList.m */; };
+		F6452BCB1EEAE27D00AFE7EB /* MVMessageMountConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B371EEAE27C00AFE7EB /* MVMessageMountConfigure.m */; };
+		F6452BCC1EEAE27D00AFE7EB /* MVMessageMountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B391EEAE27C00AFE7EB /* MVMessageMountControl.m */; };
+		F6452BCD1EEAE27D00AFE7EB /* MVMessageMountStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B3B1EEAE27C00AFE7EB /* MVMessageMountStatus.m */; };
+		F6452BCE1EEAE27D00AFE7EB /* MVMessageNamedValueFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B3D1EEAE27C00AFE7EB /* MVMessageNamedValueFloat.m */; };
+		F6452BCF1EEAE27D00AFE7EB /* MVMessageNamedValueInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B3F1EEAE27C00AFE7EB /* MVMessageNamedValueInt.m */; };
+		F6452BD01EEAE27D00AFE7EB /* MVMessageNavControllerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B411EEAE27C00AFE7EB /* MVMessageNavControllerOutput.m */; };
+		F6452BD11EEAE27D00AFE7EB /* MVMessageOpticalFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B431EEAE27C00AFE7EB /* MVMessageOpticalFlow.m */; };
+		F6452BD21EEAE27D00AFE7EB /* MVMessageParamRequestList.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B451EEAE27C00AFE7EB /* MVMessageParamRequestList.m */; };
+		F6452BD31EEAE27D00AFE7EB /* MVMessageParamRequestRead.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B471EEAE27C00AFE7EB /* MVMessageParamRequestRead.m */; };
+		F6452BD41EEAE27D00AFE7EB /* MVMessageParamSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B491EEAE27C00AFE7EB /* MVMessageParamSet.m */; };
+		F6452BD51EEAE27D00AFE7EB /* MVMessageParamValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B4B1EEAE27C00AFE7EB /* MVMessageParamValue.m */; };
+		F6452BD61EEAE27D00AFE7EB /* MVMessagePing.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B4D1EEAE27C00AFE7EB /* MVMessagePing.m */; };
+		F6452BD71EEAE27D00AFE7EB /* MVMessageRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B4F1EEAE27C00AFE7EB /* MVMessageRadio.m */; };
+		F6452BD81EEAE27D00AFE7EB /* MVMessageRawImu.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B511EEAE27C00AFE7EB /* MVMessageRawImu.m */; };
+		F6452BD91EEAE27D00AFE7EB /* MVMessageRawPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B531EEAE27C00AFE7EB /* MVMessageRawPressure.m */; };
+		F6452BDA1EEAE27D00AFE7EB /* MVMessageRcChannelsOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B551EEAE27C00AFE7EB /* MVMessageRcChannelsOverride.m */; };
+		F6452BDB1EEAE27D00AFE7EB /* MVMessageRcChannelsRaw.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B571EEAE27C00AFE7EB /* MVMessageRcChannelsRaw.m */; };
+		F6452BDC1EEAE27D00AFE7EB /* MVMessageRcChannelsScaled.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B591EEAE27C00AFE7EB /* MVMessageRcChannelsScaled.m */; };
+		F6452BDD1EEAE27D00AFE7EB /* MVMessageRequestDataStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B5B1EEAE27C00AFE7EB /* MVMessageRequestDataStream.m */; };
+		F6452BDE1EEAE27D00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B5D1EEAE27C00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.m */; };
+		F6452BDF1EEAE27D00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B5F1EEAE27C00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.m */; };
+		F6452BE01EEAE27D00AFE7EB /* MVMessageSafetyAllowedArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B611EEAE27C00AFE7EB /* MVMessageSafetyAllowedArea.m */; };
+		F6452BE11EEAE27D00AFE7EB /* MVMessageSafetySetAllowedArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B631EEAE27C00AFE7EB /* MVMessageSafetySetAllowedArea.m */; };
+		F6452BE21EEAE27D00AFE7EB /* MVMessageScaledImu.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B651EEAE27C00AFE7EB /* MVMessageScaledImu.m */; };
+		F6452BE31EEAE27D00AFE7EB /* MVMessageScaledPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B671EEAE27C00AFE7EB /* MVMessageScaledPressure.m */; };
+		F6452BE41EEAE27D00AFE7EB /* MVMessageSensorOffsets.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B691EEAE27C00AFE7EB /* MVMessageSensorOffsets.m */; };
+		F6452BE51EEAE27D00AFE7EB /* MVMessageServoOutputRaw.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B6B1EEAE27C00AFE7EB /* MVMessageServoOutputRaw.m */; };
+		F6452BE61EEAE27D00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B6D1EEAE27C00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.m */; };
+		F6452BE71EEAE27D00AFE7EB /* MVMessageSetGpsGlobalOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B6F1EEAE27C00AFE7EB /* MVMessageSetGpsGlobalOrigin.m */; };
+		F6452BE81EEAE27D00AFE7EB /* MVMessageSetLocalPositionSetpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B711EEAE27C00AFE7EB /* MVMessageSetLocalPositionSetpoint.m */; };
+		F6452BE91EEAE27D00AFE7EB /* MVMessageSetMagOffsets.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B731EEAE27C00AFE7EB /* MVMessageSetMagOffsets.m */; };
+		F6452BEA1EEAE27D00AFE7EB /* MVMessageSetMode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B751EEAE27C00AFE7EB /* MVMessageSetMode.m */; };
+		F6452BEB1EEAE27D00AFE7EB /* MVMessageSetQuadMotorsSetpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B771EEAE27C00AFE7EB /* MVMessageSetQuadMotorsSetpoint.m */; };
+		F6452BEC1EEAE27D00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B791EEAE27C00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.m */; };
+		F6452BED1EEAE27D00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B7B1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.m */; };
+		F6452BEE1EEAE27D00AFE7EB /* MVMessageSetRollPitchYawThrust.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B7D1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawThrust.m */; };
+		F6452BEF1EEAE27D00AFE7EB /* MVMessageSimstate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B7F1EEAE27C00AFE7EB /* MVMessageSimstate.m */; };
+		F6452BF01EEAE27D00AFE7EB /* MVMessageStateCorrection.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B811EEAE27C00AFE7EB /* MVMessageStateCorrection.m */; };
+		F6452BF11EEAE27D00AFE7EB /* MVMessageStatustext.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B831EEAE27C00AFE7EB /* MVMessageStatustext.m */; };
+		F6452BF21EEAE27D00AFE7EB /* MVMessageSysStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B851EEAE27C00AFE7EB /* MVMessageSysStatus.m */; };
+		F6452BF31EEAE27D00AFE7EB /* MVMessageSystemTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B871EEAE27C00AFE7EB /* MVMessageSystemTime.m */; };
+		F6452BF41EEAE27D00AFE7EB /* MVMessageVfrHud.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B891EEAE27C00AFE7EB /* MVMessageVfrHud.m */; };
+		F6452BF51EEAE27D00AFE7EB /* MVMessageViconPositionEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B8B1EEAE27C00AFE7EB /* MVMessageViconPositionEstimate.m */; };
+		F6452BF61EEAE27D00AFE7EB /* MVMessageVisionPositionEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B8D1EEAE27C00AFE7EB /* MVMessageVisionPositionEstimate.m */; };
+		F6452BF71EEAE27D00AFE7EB /* MVMessageVisionSpeedEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6452B8F1EEAE27C00AFE7EB /* MVMessageVisionSpeedEstimate.m */; };
+		F6543A5D1DE979C7000FBF48 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = F6543A501DE979C7000FBF48 /* README.markdown */; };
+		F6543A5E1DE979C7000FBF48 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F6543A551DE979C7000FBF48 /* GCDAsyncSocket.m */; };
+		F6543A5F1DE979C7000FBF48 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F6543A571DE979C7000FBF48 /* GCDAsyncUdpSocket.m */; };
+		F6543A601DE979C7000FBF48 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F6543A5A1DE979C7000FBF48 /* AsyncSocket.m */; };
+		F6543A611DE979C7000FBF48 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F6543A5C1DE979C7000FBF48 /* AsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36DDE8781D010EC800B34C8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				36DDE87E1D010EC800B34C8D /* MavlinkProtocol.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36DDE87A1D010EC800B34C8D /* libMavlinkProtocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMavlinkProtocol.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DDE87D1D010EC800B34C8D /* MavlinkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MavlinkProtocol.h; sourceTree = "<group>"; };
+		36DDE87F1D010EC800B34C8D /* MavlinkProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MavlinkProtocol.m; sourceTree = "<group>"; };
+		36DDE95C1D01102A00B34C8D /* checksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checksum.h; sourceTree = "<group>"; };
+		36DDE9AE1D01102B00B34C8D /* mavlink_conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_conversions.h; sourceTree = "<group>"; };
+		36DDE9AF1D01102B00B34C8D /* mavlink_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_helpers.h; sourceTree = "<group>"; };
+		36DDE9B01D01102B00B34C8D /* mavlink_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_types.h; sourceTree = "<group>"; };
+		36DDE9B11D01102B00B34C8D /* protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protocol.h; sourceTree = "<group>"; };
+		36DDEA121D01104800B34C8D /* keyshareTcpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyshareTcpSocket.h; sourceTree = "<group>"; };
+		36DDEA131D01104800B34C8D /* keyshareTcpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyshareTcpSocket.m; sourceTree = "<group>"; };
+		F6452AA91EEAE27C00AFE7EB /* ardupilotmega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ardupilotmega.h; sourceTree = "<group>"; };
+		F6452AAA1EEAE27C00AFE7EB /* mavlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink.h; sourceTree = "<group>"; };
+		F6452AAB1EEAE27C00AFE7EB /* mavlink_msg_ahrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ahrs.h; sourceTree = "<group>"; };
+		F6452AAC1EEAE27C00AFE7EB /* mavlink_msg_ap_adc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ap_adc.h; sourceTree = "<group>"; };
+		F6452AAD1EEAE27C00AFE7EB /* mavlink_msg_digicam_configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_digicam_configure.h; sourceTree = "<group>"; };
+		F6452AAE1EEAE27C00AFE7EB /* mavlink_msg_digicam_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_digicam_control.h; sourceTree = "<group>"; };
+		F6452AAF1EEAE27C00AFE7EB /* mavlink_msg_exceute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_exceute.h; sourceTree = "<group>"; };
+		F6452AB01EEAE27C00AFE7EB /* mavlink_msg_exceute_return.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_exceute_return.h; sourceTree = "<group>"; };
+		F6452AB11EEAE27C00AFE7EB /* mavlink_msg_fence_fetch_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_fetch_point.h; sourceTree = "<group>"; };
+		F6452AB21EEAE27C00AFE7EB /* mavlink_msg_fence_point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_point.h; sourceTree = "<group>"; };
+		F6452AB31EEAE27C00AFE7EB /* mavlink_msg_fence_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_fence_status.h; sourceTree = "<group>"; };
+		F6452AB41EEAE27C00AFE7EB /* mavlink_msg_hwstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hwstatus.h; sourceTree = "<group>"; };
+		F6452AB51EEAE27C00AFE7EB /* mavlink_msg_log_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_data.h; sourceTree = "<group>"; };
+		F6452AB61EEAE27C00AFE7EB /* mavlink_msg_log_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_entry.h; sourceTree = "<group>"; };
+		F6452AB71EEAE27C00AFE7EB /* mavlink_msg_log_request_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_data.h; sourceTree = "<group>"; };
+		F6452AB81EEAE27C00AFE7EB /* mavlink_msg_log_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_list.h; sourceTree = "<group>"; };
+		F6452AB91EEAE27C00AFE7EB /* mavlink_msg_meminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_meminfo.h; sourceTree = "<group>"; };
+		F6452ABA1EEAE27C00AFE7EB /* mavlink_msg_mission_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_message.h; sourceTree = "<group>"; };
+		F6452ABB1EEAE27C00AFE7EB /* mavlink_msg_mount_configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_configure.h; sourceTree = "<group>"; };
+		F6452ABC1EEAE27C00AFE7EB /* mavlink_msg_mount_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_control.h; sourceTree = "<group>"; };
+		F6452ABD1EEAE27C00AFE7EB /* mavlink_msg_mount_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mount_status.h; sourceTree = "<group>"; };
+		F6452ABE1EEAE27C00AFE7EB /* mavlink_msg_radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_radio.h; sourceTree = "<group>"; };
+		F6452ABF1EEAE27C00AFE7EB /* mavlink_msg_sensor_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_sensor_offsets.h; sourceTree = "<group>"; };
+		F6452AC01EEAE27C00AFE7EB /* mavlink_msg_set_mag_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_mag_offsets.h; sourceTree = "<group>"; };
+		F6452AC11EEAE27C00AFE7EB /* mavlink_msg_simstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_simstate.h; sourceTree = "<group>"; };
+		F6452AC21EEAE27C00AFE7EB /* MVArdupilotmegaMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVArdupilotmegaMessages.h; sourceTree = "<group>"; };
+		F6452AC31EEAE27C00AFE7EB /* MVCommonMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCommonMessages.h; sourceTree = "<group>"; };
+		F6452AC41EEAE27C00AFE7EB /* MVMavlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMavlink.h; sourceTree = "<group>"; };
+		F6452AC51EEAE27C00AFE7EB /* MVMavlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMavlink.m; sourceTree = "<group>"; };
+		F6452AC61EEAE27C00AFE7EB /* MVMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessage.h; sourceTree = "<group>"; };
+		F6452AC71EEAE27C00AFE7EB /* MVMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessage.m; sourceTree = "<group>"; };
+		F6452AC81EEAE27C00AFE7EB /* MVMessageAhrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageAhrs.h; sourceTree = "<group>"; };
+		F6452AC91EEAE27C00AFE7EB /* MVMessageAhrs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageAhrs.m; sourceTree = "<group>"; };
+		F6452ACA1EEAE27C00AFE7EB /* MVMessageApAdc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageApAdc.h; sourceTree = "<group>"; };
+		F6452ACB1EEAE27C00AFE7EB /* MVMessageApAdc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageApAdc.m; sourceTree = "<group>"; };
+		F6452ACC1EEAE27C00AFE7EB /* MVMessageAttitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageAttitude.h; sourceTree = "<group>"; };
+		F6452ACD1EEAE27C00AFE7EB /* MVMessageAttitude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageAttitude.m; sourceTree = "<group>"; };
+		F6452ACE1EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageAttitudeQuaternion.h; sourceTree = "<group>"; };
+		F6452ACF1EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageAttitudeQuaternion.m; sourceTree = "<group>"; };
+		F6452AD01EEAE27C00AFE7EB /* MVMessageAuthKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageAuthKey.h; sourceTree = "<group>"; };
+		F6452AD11EEAE27C00AFE7EB /* MVMessageAuthKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageAuthKey.m; sourceTree = "<group>"; };
+		F6452AD21EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageChangeOperatorControl.h; sourceTree = "<group>"; };
+		F6452AD31EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageChangeOperatorControl.m; sourceTree = "<group>"; };
+		F6452AD41EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageChangeOperatorControlAck.h; sourceTree = "<group>"; };
+		F6452AD51EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageChangeOperatorControlAck.m; sourceTree = "<group>"; };
+		F6452AD61EEAE27C00AFE7EB /* MVMessageCommandAck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageCommandAck.h; sourceTree = "<group>"; };
+		F6452AD71EEAE27C00AFE7EB /* MVMessageCommandAck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageCommandAck.m; sourceTree = "<group>"; };
+		F6452AD81EEAE27C00AFE7EB /* MVMessageCommandLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageCommandLong.h; sourceTree = "<group>"; };
+		F6452AD91EEAE27C00AFE7EB /* MVMessageCommandLong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageCommandLong.m; sourceTree = "<group>"; };
+		F6452ADA1EEAE27C00AFE7EB /* MVMessageDataStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageDataStream.h; sourceTree = "<group>"; };
+		F6452ADB1EEAE27C00AFE7EB /* MVMessageDataStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageDataStream.m; sourceTree = "<group>"; };
+		F6452ADC1EEAE27C00AFE7EB /* MVMessageDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageDebug.h; sourceTree = "<group>"; };
+		F6452ADD1EEAE27C00AFE7EB /* MVMessageDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageDebug.m; sourceTree = "<group>"; };
+		F6452ADE1EEAE27C00AFE7EB /* MVMessageDebugVect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageDebugVect.h; sourceTree = "<group>"; };
+		F6452ADF1EEAE27C00AFE7EB /* MVMessageDebugVect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageDebugVect.m; sourceTree = "<group>"; };
+		F6452AE01EEAE27C00AFE7EB /* MVMessageDigicamConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageDigicamConfigure.h; sourceTree = "<group>"; };
+		F6452AE11EEAE27C00AFE7EB /* MVMessageDigicamConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageDigicamConfigure.m; sourceTree = "<group>"; };
+		F6452AE21EEAE27C00AFE7EB /* MVMessageDigicamControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageDigicamControl.h; sourceTree = "<group>"; };
+		F6452AE31EEAE27C00AFE7EB /* MVMessageDigicamControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageDigicamControl.m; sourceTree = "<group>"; };
+		F6452AE41EEAE27C00AFE7EB /* MVMessageexceute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageexceute.h; sourceTree = "<group>"; };
+		F6452AE51EEAE27C00AFE7EB /* MVMessageexceute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageexceute.m; sourceTree = "<group>"; };
+		F6452AE61EEAE27C00AFE7EB /* MVMessageexceutereturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageexceutereturn.h; sourceTree = "<group>"; };
+		F6452AE71EEAE27C00AFE7EB /* MVMessageexceutereturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageexceutereturn.m; sourceTree = "<group>"; };
+		F6452AE81EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageFenceFetchPoint.h; sourceTree = "<group>"; };
+		F6452AE91EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageFenceFetchPoint.m; sourceTree = "<group>"; };
+		F6452AEA1EEAE27C00AFE7EB /* MVMessageFencePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageFencePoint.h; sourceTree = "<group>"; };
+		F6452AEB1EEAE27C00AFE7EB /* MVMessageFencePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageFencePoint.m; sourceTree = "<group>"; };
+		F6452AEC1EEAE27C00AFE7EB /* MVMessageFenceStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageFenceStatus.h; sourceTree = "<group>"; };
+		F6452AED1EEAE27C00AFE7EB /* MVMessageFenceStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageFenceStatus.m; sourceTree = "<group>"; };
+		F6452AEE1EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGlobalPositionInt.h; sourceTree = "<group>"; };
+		F6452AEF1EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGlobalPositionInt.m; sourceTree = "<group>"; };
+		F6452AF01EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGlobalPositionSetpointInt.h; sourceTree = "<group>"; };
+		F6452AF11EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGlobalPositionSetpointInt.m; sourceTree = "<group>"; };
+		F6452AF21EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGlobalVisionPositionEstimate.h; sourceTree = "<group>"; };
+		F6452AF31EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGlobalVisionPositionEstimate.m; sourceTree = "<group>"; };
+		F6452AF41EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGpsGlobalOrigin.h; sourceTree = "<group>"; };
+		F6452AF51EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGpsGlobalOrigin.m; sourceTree = "<group>"; };
+		F6452AF61EEAE27C00AFE7EB /* MVMessageGpsRawInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGpsRawInt.h; sourceTree = "<group>"; };
+		F6452AF71EEAE27C00AFE7EB /* MVMessageGpsRawInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGpsRawInt.m; sourceTree = "<group>"; };
+		F6452AF81EEAE27C00AFE7EB /* MVMessageGpsStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageGpsStatus.h; sourceTree = "<group>"; };
+		F6452AF91EEAE27C00AFE7EB /* MVMessageGpsStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageGpsStatus.m; sourceTree = "<group>"; };
+		F6452AFA1EEAE27C00AFE7EB /* MVMessageHeartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageHeartbeat.h; sourceTree = "<group>"; };
+		F6452AFB1EEAE27C00AFE7EB /* MVMessageHeartbeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageHeartbeat.m; sourceTree = "<group>"; };
+		F6452AFC1EEAE27C00AFE7EB /* MVMessageHilControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageHilControls.h; sourceTree = "<group>"; };
+		F6452AFD1EEAE27C00AFE7EB /* MVMessageHilControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageHilControls.m; sourceTree = "<group>"; };
+		F6452AFE1EEAE27C00AFE7EB /* MVMessageHilRcInputsRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageHilRcInputsRaw.h; sourceTree = "<group>"; };
+		F6452AFF1EEAE27C00AFE7EB /* MVMessageHilRcInputsRaw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageHilRcInputsRaw.m; sourceTree = "<group>"; };
+		F6452B001EEAE27C00AFE7EB /* MVMessageHilState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageHilState.h; sourceTree = "<group>"; };
+		F6452B011EEAE27C00AFE7EB /* MVMessageHilState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageHilState.m; sourceTree = "<group>"; };
+		F6452B021EEAE27C00AFE7EB /* MVMessageHwstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageHwstatus.h; sourceTree = "<group>"; };
+		F6452B031EEAE27C00AFE7EB /* MVMessageHwstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageHwstatus.m; sourceTree = "<group>"; };
+		F6452B041EEAE27C00AFE7EB /* MVMessagek2compasscali.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessagek2compasscali.h; sourceTree = "<group>"; };
+		F6452B051EEAE27C00AFE7EB /* MVMessagek2compasscali.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessagek2compasscali.m; sourceTree = "<group>"; };
+		F6452B061EEAE27C00AFE7EB /* MVMessagek2message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessagek2message.h; sourceTree = "<group>"; };
+		F6452B071EEAE27C00AFE7EB /* MVMessagek2message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessagek2message.m; sourceTree = "<group>"; };
+		F6452B081EEAE27C00AFE7EB /* MVMessagek2messageack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessagek2messageack.h; sourceTree = "<group>"; };
+		F6452B091EEAE27C00AFE7EB /* MVMessagek2messageack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessagek2messageack.m; sourceTree = "<group>"; };
+		F6452B0A1EEAE27C00AFE7EB /* MVMessageLocalPositionNed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLocalPositionNed.h; sourceTree = "<group>"; };
+		F6452B0B1EEAE27C00AFE7EB /* MVMessageLocalPositionNed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLocalPositionNed.m; sourceTree = "<group>"; };
+		F6452B0C1EEAE27C00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLocalPositionNedSystemGlobalOffset.h; sourceTree = "<group>"; };
+		F6452B0D1EEAE27C00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLocalPositionNedSystemGlobalOffset.m; sourceTree = "<group>"; };
+		F6452B0E1EEAE27C00AFE7EB /* MVMessageLocalPositionSetpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLocalPositionSetpoint.h; sourceTree = "<group>"; };
+		F6452B0F1EEAE27C00AFE7EB /* MVMessageLocalPositionSetpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLocalPositionSetpoint.m; sourceTree = "<group>"; };
+		F6452B101EEAE27C00AFE7EB /* MVMessageLogData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLogData.h; sourceTree = "<group>"; };
+		F6452B111EEAE27C00AFE7EB /* MVMessageLogData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLogData.m; sourceTree = "<group>"; };
+		F6452B121EEAE27C00AFE7EB /* MVMessageLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLogEntry.h; sourceTree = "<group>"; };
+		F6452B131EEAE27C00AFE7EB /* MVMessageLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLogEntry.m; sourceTree = "<group>"; };
+		F6452B141EEAE27C00AFE7EB /* MVMessageLogRequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLogRequestData.h; sourceTree = "<group>"; };
+		F6452B151EEAE27C00AFE7EB /* MVMessageLogRequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLogRequestData.m; sourceTree = "<group>"; };
+		F6452B161EEAE27C00AFE7EB /* MVMessageLogRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageLogRequestList.h; sourceTree = "<group>"; };
+		F6452B171EEAE27C00AFE7EB /* MVMessageLogRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageLogRequestList.m; sourceTree = "<group>"; };
+		F6452B181EEAE27C00AFE7EB /* MVMessageManualControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageManualControl.h; sourceTree = "<group>"; };
+		F6452B191EEAE27C00AFE7EB /* MVMessageManualControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageManualControl.m; sourceTree = "<group>"; };
+		F6452B1A1EEAE27C00AFE7EB /* MVMessageMeminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMeminfo.h; sourceTree = "<group>"; };
+		F6452B1B1EEAE27C00AFE7EB /* MVMessageMeminfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMeminfo.m; sourceTree = "<group>"; };
+		F6452B1C1EEAE27C00AFE7EB /* MVMessageMemoryVect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMemoryVect.h; sourceTree = "<group>"; };
+		F6452B1D1EEAE27C00AFE7EB /* MVMessageMemoryVect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMemoryVect.m; sourceTree = "<group>"; };
+		F6452B1E1EEAE27C00AFE7EB /* MVMessagemission_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessagemission_message.h; sourceTree = "<group>"; };
+		F6452B1F1EEAE27C00AFE7EB /* MVMessagemission_message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessagemission_message.m; sourceTree = "<group>"; };
+		F6452B201EEAE27C00AFE7EB /* MVMessageMissionAck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionAck.h; sourceTree = "<group>"; };
+		F6452B211EEAE27C00AFE7EB /* MVMessageMissionAck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionAck.m; sourceTree = "<group>"; };
+		F6452B221EEAE27C00AFE7EB /* MVMessageMissionClearAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionClearAll.h; sourceTree = "<group>"; };
+		F6452B231EEAE27C00AFE7EB /* MVMessageMissionClearAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionClearAll.m; sourceTree = "<group>"; };
+		F6452B241EEAE27C00AFE7EB /* MVMessageMissionCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionCount.h; sourceTree = "<group>"; };
+		F6452B251EEAE27C00AFE7EB /* MVMessageMissionCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionCount.m; sourceTree = "<group>"; };
+		F6452B261EEAE27C00AFE7EB /* MVMessageMissionCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionCurrent.h; sourceTree = "<group>"; };
+		F6452B271EEAE27C00AFE7EB /* MVMessageMissionCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionCurrent.m; sourceTree = "<group>"; };
+		F6452B281EEAE27C00AFE7EB /* MVMessageMissionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionItem.h; sourceTree = "<group>"; };
+		F6452B291EEAE27C00AFE7EB /* MVMessageMissionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionItem.m; sourceTree = "<group>"; };
+		F6452B2A1EEAE27C00AFE7EB /* MVMessageMissionItemReached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionItemReached.h; sourceTree = "<group>"; };
+		F6452B2B1EEAE27C00AFE7EB /* MVMessageMissionItemReached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionItemReached.m; sourceTree = "<group>"; };
+		F6452B2C1EEAE27C00AFE7EB /* MVMessageMissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionRequest.h; sourceTree = "<group>"; };
+		F6452B2D1EEAE27C00AFE7EB /* MVMessageMissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionRequest.m; sourceTree = "<group>"; };
+		F6452B2E1EEAE27C00AFE7EB /* MVMessageMissionRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionRequestList.h; sourceTree = "<group>"; };
+		F6452B2F1EEAE27C00AFE7EB /* MVMessageMissionRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionRequestList.m; sourceTree = "<group>"; };
+		F6452B301EEAE27C00AFE7EB /* MVMessageMissionRequestPartialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionRequestPartialList.h; sourceTree = "<group>"; };
+		F6452B311EEAE27C00AFE7EB /* MVMessageMissionRequestPartialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionRequestPartialList.m; sourceTree = "<group>"; };
+		F6452B321EEAE27C00AFE7EB /* MVMessageMissionSetCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionSetCurrent.h; sourceTree = "<group>"; };
+		F6452B331EEAE27C00AFE7EB /* MVMessageMissionSetCurrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionSetCurrent.m; sourceTree = "<group>"; };
+		F6452B341EEAE27C00AFE7EB /* MVMessageMissionWritePartialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMissionWritePartialList.h; sourceTree = "<group>"; };
+		F6452B351EEAE27C00AFE7EB /* MVMessageMissionWritePartialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMissionWritePartialList.m; sourceTree = "<group>"; };
+		F6452B361EEAE27C00AFE7EB /* MVMessageMountConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMountConfigure.h; sourceTree = "<group>"; };
+		F6452B371EEAE27C00AFE7EB /* MVMessageMountConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMountConfigure.m; sourceTree = "<group>"; };
+		F6452B381EEAE27C00AFE7EB /* MVMessageMountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMountControl.h; sourceTree = "<group>"; };
+		F6452B391EEAE27C00AFE7EB /* MVMessageMountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMountControl.m; sourceTree = "<group>"; };
+		F6452B3A1EEAE27C00AFE7EB /* MVMessageMountStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageMountStatus.h; sourceTree = "<group>"; };
+		F6452B3B1EEAE27C00AFE7EB /* MVMessageMountStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageMountStatus.m; sourceTree = "<group>"; };
+		F6452B3C1EEAE27C00AFE7EB /* MVMessageNamedValueFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageNamedValueFloat.h; sourceTree = "<group>"; };
+		F6452B3D1EEAE27C00AFE7EB /* MVMessageNamedValueFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageNamedValueFloat.m; sourceTree = "<group>"; };
+		F6452B3E1EEAE27C00AFE7EB /* MVMessageNamedValueInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageNamedValueInt.h; sourceTree = "<group>"; };
+		F6452B3F1EEAE27C00AFE7EB /* MVMessageNamedValueInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageNamedValueInt.m; sourceTree = "<group>"; };
+		F6452B401EEAE27C00AFE7EB /* MVMessageNavControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageNavControllerOutput.h; sourceTree = "<group>"; };
+		F6452B411EEAE27C00AFE7EB /* MVMessageNavControllerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageNavControllerOutput.m; sourceTree = "<group>"; };
+		F6452B421EEAE27C00AFE7EB /* MVMessageOpticalFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageOpticalFlow.h; sourceTree = "<group>"; };
+		F6452B431EEAE27C00AFE7EB /* MVMessageOpticalFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageOpticalFlow.m; sourceTree = "<group>"; };
+		F6452B441EEAE27C00AFE7EB /* MVMessageParamRequestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageParamRequestList.h; sourceTree = "<group>"; };
+		F6452B451EEAE27C00AFE7EB /* MVMessageParamRequestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageParamRequestList.m; sourceTree = "<group>"; };
+		F6452B461EEAE27C00AFE7EB /* MVMessageParamRequestRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageParamRequestRead.h; sourceTree = "<group>"; };
+		F6452B471EEAE27C00AFE7EB /* MVMessageParamRequestRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageParamRequestRead.m; sourceTree = "<group>"; };
+		F6452B481EEAE27C00AFE7EB /* MVMessageParamSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageParamSet.h; sourceTree = "<group>"; };
+		F6452B491EEAE27C00AFE7EB /* MVMessageParamSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageParamSet.m; sourceTree = "<group>"; };
+		F6452B4A1EEAE27C00AFE7EB /* MVMessageParamValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageParamValue.h; sourceTree = "<group>"; };
+		F6452B4B1EEAE27C00AFE7EB /* MVMessageParamValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageParamValue.m; sourceTree = "<group>"; };
+		F6452B4C1EEAE27C00AFE7EB /* MVMessagePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessagePing.h; sourceTree = "<group>"; };
+		F6452B4D1EEAE27C00AFE7EB /* MVMessagePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessagePing.m; sourceTree = "<group>"; };
+		F6452B4E1EEAE27C00AFE7EB /* MVMessageRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRadio.h; sourceTree = "<group>"; };
+		F6452B4F1EEAE27C00AFE7EB /* MVMessageRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRadio.m; sourceTree = "<group>"; };
+		F6452B501EEAE27C00AFE7EB /* MVMessageRawImu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRawImu.h; sourceTree = "<group>"; };
+		F6452B511EEAE27C00AFE7EB /* MVMessageRawImu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRawImu.m; sourceTree = "<group>"; };
+		F6452B521EEAE27C00AFE7EB /* MVMessageRawPressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRawPressure.h; sourceTree = "<group>"; };
+		F6452B531EEAE27C00AFE7EB /* MVMessageRawPressure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRawPressure.m; sourceTree = "<group>"; };
+		F6452B541EEAE27C00AFE7EB /* MVMessageRcChannelsOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRcChannelsOverride.h; sourceTree = "<group>"; };
+		F6452B551EEAE27C00AFE7EB /* MVMessageRcChannelsOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRcChannelsOverride.m; sourceTree = "<group>"; };
+		F6452B561EEAE27C00AFE7EB /* MVMessageRcChannelsRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRcChannelsRaw.h; sourceTree = "<group>"; };
+		F6452B571EEAE27C00AFE7EB /* MVMessageRcChannelsRaw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRcChannelsRaw.m; sourceTree = "<group>"; };
+		F6452B581EEAE27C00AFE7EB /* MVMessageRcChannelsScaled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRcChannelsScaled.h; sourceTree = "<group>"; };
+		F6452B591EEAE27C00AFE7EB /* MVMessageRcChannelsScaled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRcChannelsScaled.m; sourceTree = "<group>"; };
+		F6452B5A1EEAE27C00AFE7EB /* MVMessageRequestDataStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRequestDataStream.h; sourceTree = "<group>"; };
+		F6452B5B1EEAE27C00AFE7EB /* MVMessageRequestDataStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRequestDataStream.m; sourceTree = "<group>"; };
+		F6452B5C1EEAE27C00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRollPitchYawSpeedThrustSetpoint.h; sourceTree = "<group>"; };
+		F6452B5D1EEAE27C00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRollPitchYawSpeedThrustSetpoint.m; sourceTree = "<group>"; };
+		F6452B5E1EEAE27C00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageRollPitchYawThrustSetpoint.h; sourceTree = "<group>"; };
+		F6452B5F1EEAE27C00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageRollPitchYawThrustSetpoint.m; sourceTree = "<group>"; };
+		F6452B601EEAE27C00AFE7EB /* MVMessageSafetyAllowedArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSafetyAllowedArea.h; sourceTree = "<group>"; };
+		F6452B611EEAE27C00AFE7EB /* MVMessageSafetyAllowedArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSafetyAllowedArea.m; sourceTree = "<group>"; };
+		F6452B621EEAE27C00AFE7EB /* MVMessageSafetySetAllowedArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSafetySetAllowedArea.h; sourceTree = "<group>"; };
+		F6452B631EEAE27C00AFE7EB /* MVMessageSafetySetAllowedArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSafetySetAllowedArea.m; sourceTree = "<group>"; };
+		F6452B641EEAE27C00AFE7EB /* MVMessageScaledImu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageScaledImu.h; sourceTree = "<group>"; };
+		F6452B651EEAE27C00AFE7EB /* MVMessageScaledImu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageScaledImu.m; sourceTree = "<group>"; };
+		F6452B661EEAE27C00AFE7EB /* MVMessageScaledPressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageScaledPressure.h; sourceTree = "<group>"; };
+		F6452B671EEAE27C00AFE7EB /* MVMessageScaledPressure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageScaledPressure.m; sourceTree = "<group>"; };
+		F6452B681EEAE27C00AFE7EB /* MVMessageSensorOffsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSensorOffsets.h; sourceTree = "<group>"; };
+		F6452B691EEAE27C00AFE7EB /* MVMessageSensorOffsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSensorOffsets.m; sourceTree = "<group>"; };
+		F6452B6A1EEAE27C00AFE7EB /* MVMessageServoOutputRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageServoOutputRaw.h; sourceTree = "<group>"; };
+		F6452B6B1EEAE27C00AFE7EB /* MVMessageServoOutputRaw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageServoOutputRaw.m; sourceTree = "<group>"; };
+		F6452B6C1EEAE27C00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetGlobalPositionSetpointInt.h; sourceTree = "<group>"; };
+		F6452B6D1EEAE27C00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetGlobalPositionSetpointInt.m; sourceTree = "<group>"; };
+		F6452B6E1EEAE27C00AFE7EB /* MVMessageSetGpsGlobalOrigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetGpsGlobalOrigin.h; sourceTree = "<group>"; };
+		F6452B6F1EEAE27C00AFE7EB /* MVMessageSetGpsGlobalOrigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetGpsGlobalOrigin.m; sourceTree = "<group>"; };
+		F6452B701EEAE27C00AFE7EB /* MVMessageSetLocalPositionSetpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetLocalPositionSetpoint.h; sourceTree = "<group>"; };
+		F6452B711EEAE27C00AFE7EB /* MVMessageSetLocalPositionSetpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetLocalPositionSetpoint.m; sourceTree = "<group>"; };
+		F6452B721EEAE27C00AFE7EB /* MVMessageSetMagOffsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetMagOffsets.h; sourceTree = "<group>"; };
+		F6452B731EEAE27C00AFE7EB /* MVMessageSetMagOffsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetMagOffsets.m; sourceTree = "<group>"; };
+		F6452B741EEAE27C00AFE7EB /* MVMessageSetMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetMode.h; sourceTree = "<group>"; };
+		F6452B751EEAE27C00AFE7EB /* MVMessageSetMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetMode.m; sourceTree = "<group>"; };
+		F6452B761EEAE27C00AFE7EB /* MVMessageSetQuadMotorsSetpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetQuadMotorsSetpoint.h; sourceTree = "<group>"; };
+		F6452B771EEAE27C00AFE7EB /* MVMessageSetQuadMotorsSetpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetQuadMotorsSetpoint.m; sourceTree = "<group>"; };
+		F6452B781EEAE27C00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetQuadSwarmRollPitchYawThrust.h; sourceTree = "<group>"; };
+		F6452B791EEAE27C00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetQuadSwarmRollPitchYawThrust.m; sourceTree = "<group>"; };
+		F6452B7A1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetRollPitchYawSpeedThrust.h; sourceTree = "<group>"; };
+		F6452B7B1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetRollPitchYawSpeedThrust.m; sourceTree = "<group>"; };
+		F6452B7C1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawThrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSetRollPitchYawThrust.h; sourceTree = "<group>"; };
+		F6452B7D1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawThrust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSetRollPitchYawThrust.m; sourceTree = "<group>"; };
+		F6452B7E1EEAE27C00AFE7EB /* MVMessageSimstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSimstate.h; sourceTree = "<group>"; };
+		F6452B7F1EEAE27C00AFE7EB /* MVMessageSimstate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSimstate.m; sourceTree = "<group>"; };
+		F6452B801EEAE27C00AFE7EB /* MVMessageStateCorrection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageStateCorrection.h; sourceTree = "<group>"; };
+		F6452B811EEAE27C00AFE7EB /* MVMessageStateCorrection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageStateCorrection.m; sourceTree = "<group>"; };
+		F6452B821EEAE27C00AFE7EB /* MVMessageStatustext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageStatustext.h; sourceTree = "<group>"; };
+		F6452B831EEAE27C00AFE7EB /* MVMessageStatustext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageStatustext.m; sourceTree = "<group>"; };
+		F6452B841EEAE27C00AFE7EB /* MVMessageSysStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSysStatus.h; sourceTree = "<group>"; };
+		F6452B851EEAE27C00AFE7EB /* MVMessageSysStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSysStatus.m; sourceTree = "<group>"; };
+		F6452B861EEAE27C00AFE7EB /* MVMessageSystemTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageSystemTime.h; sourceTree = "<group>"; };
+		F6452B871EEAE27C00AFE7EB /* MVMessageSystemTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageSystemTime.m; sourceTree = "<group>"; };
+		F6452B881EEAE27C00AFE7EB /* MVMessageVfrHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageVfrHud.h; sourceTree = "<group>"; };
+		F6452B891EEAE27C00AFE7EB /* MVMessageVfrHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageVfrHud.m; sourceTree = "<group>"; };
+		F6452B8A1EEAE27C00AFE7EB /* MVMessageViconPositionEstimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageViconPositionEstimate.h; sourceTree = "<group>"; };
+		F6452B8B1EEAE27C00AFE7EB /* MVMessageViconPositionEstimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageViconPositionEstimate.m; sourceTree = "<group>"; };
+		F6452B8C1EEAE27C00AFE7EB /* MVMessageVisionPositionEstimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageVisionPositionEstimate.h; sourceTree = "<group>"; };
+		F6452B8D1EEAE27C00AFE7EB /* MVMessageVisionPositionEstimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageVisionPositionEstimate.m; sourceTree = "<group>"; };
+		F6452B8E1EEAE27C00AFE7EB /* MVMessageVisionSpeedEstimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMessageVisionSpeedEstimate.h; sourceTree = "<group>"; };
+		F6452B8F1EEAE27C00AFE7EB /* MVMessageVisionSpeedEstimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMessageVisionSpeedEstimate.m; sourceTree = "<group>"; };
+		F6452B901EEAE27C00AFE7EB /* testsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testsuite.h; sourceTree = "<group>"; };
+		F6452B911EEAE27C00AFE7EB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		F6452BF91EEAE28400AFE7EB /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F6452BFA1EEAE28400AFE7EB /* mavlink_msg_attitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_attitude.h; sourceTree = "<group>"; };
+		F6452BFB1EEAE28400AFE7EB /* mavlink_msg_attitude_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_attitude_quaternion.h; sourceTree = "<group>"; };
+		F6452BFC1EEAE28400AFE7EB /* mavlink_msg_auth_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_auth_key.h; sourceTree = "<group>"; };
+		F6452BFD1EEAE28400AFE7EB /* mavlink_msg_change_operator_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_change_operator_control.h; sourceTree = "<group>"; };
+		F6452BFE1EEAE28400AFE7EB /* mavlink_msg_change_operator_control_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_change_operator_control_ack.h; sourceTree = "<group>"; };
+		F6452BFF1EEAE28400AFE7EB /* mavlink_msg_command_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_command_ack.h; sourceTree = "<group>"; };
+		F6452C001EEAE28400AFE7EB /* mavlink_msg_command_long.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_command_long.h; sourceTree = "<group>"; };
+		F6452C011EEAE28400AFE7EB /* mavlink_msg_data_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_data_stream.h; sourceTree = "<group>"; };
+		F6452C021EEAE28400AFE7EB /* mavlink_msg_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_debug.h; sourceTree = "<group>"; };
+		F6452C031EEAE28400AFE7EB /* mavlink_msg_debug_vect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_debug_vect.h; sourceTree = "<group>"; };
+		F6452C041EEAE28400AFE7EB /* mavlink_msg_global_position_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_position_int.h; sourceTree = "<group>"; };
+		F6452C051EEAE28400AFE7EB /* mavlink_msg_global_position_setpoint_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_position_setpoint_int.h; sourceTree = "<group>"; };
+		F6452C061EEAE28400AFE7EB /* mavlink_msg_global_vision_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_global_vision_position_estimate.h; sourceTree = "<group>"; };
+		F6452C071EEAE28400AFE7EB /* mavlink_msg_gps_global_origin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_global_origin.h; sourceTree = "<group>"; };
+		F6452C081EEAE28400AFE7EB /* mavlink_msg_gps_raw_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_raw_int.h; sourceTree = "<group>"; };
+		F6452C091EEAE28400AFE7EB /* mavlink_msg_gps_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_gps_status.h; sourceTree = "<group>"; };
+		F6452C0A1EEAE28400AFE7EB /* mavlink_msg_heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_heartbeat.h; sourceTree = "<group>"; };
+		F6452C0B1EEAE28400AFE7EB /* mavlink_msg_hil_controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_controls.h; sourceTree = "<group>"; };
+		F6452C0C1EEAE28400AFE7EB /* mavlink_msg_hil_rc_inputs_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_rc_inputs_raw.h; sourceTree = "<group>"; };
+		F6452C0D1EEAE28400AFE7EB /* mavlink_msg_hil_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_hil_state.h; sourceTree = "<group>"; };
+		F6452C0E1EEAE28400AFE7EB /* mavlink_msg_k2_compass_cali.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_k2_compass_cali.h; sourceTree = "<group>"; };
+		F6452C0F1EEAE28400AFE7EB /* mavlink_msg_k2_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_k2_message.h; sourceTree = "<group>"; };
+		F6452C101EEAE28400AFE7EB /* mavlink_msg_k2_message_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_k2_message_ack.h; sourceTree = "<group>"; };
+		F6452C111EEAE28400AFE7EB /* mavlink_msg_local_position_ned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_ned.h; sourceTree = "<group>"; };
+		F6452C121EEAE28400AFE7EB /* mavlink_msg_local_position_ned_system_global_offset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_ned_system_global_offset.h; sourceTree = "<group>"; };
+		F6452C131EEAE28400AFE7EB /* mavlink_msg_local_position_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_local_position_setpoint.h; sourceTree = "<group>"; };
+		F6452C141EEAE28400AFE7EB /* mavlink_msg_log_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_entry.h; sourceTree = "<group>"; };
+		F6452C151EEAE28400AFE7EB /* mavlink_msg_log_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_log_request_list.h; sourceTree = "<group>"; };
+		F6452C161EEAE28400AFE7EB /* mavlink_msg_manual_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_manual_control.h; sourceTree = "<group>"; };
+		F6452C171EEAE28400AFE7EB /* mavlink_msg_memory_vect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_memory_vect.h; sourceTree = "<group>"; };
+		F6452C181EEAE28400AFE7EB /* mavlink_msg_mission_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_ack.h; sourceTree = "<group>"; };
+		F6452C191EEAE28400AFE7EB /* mavlink_msg_mission_clear_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_clear_all.h; sourceTree = "<group>"; };
+		F6452C1A1EEAE28400AFE7EB /* mavlink_msg_mission_count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_count.h; sourceTree = "<group>"; };
+		F6452C1B1EEAE28400AFE7EB /* mavlink_msg_mission_current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_current.h; sourceTree = "<group>"; };
+		F6452C1C1EEAE28400AFE7EB /* mavlink_msg_mission_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_item.h; sourceTree = "<group>"; };
+		F6452C1D1EEAE28400AFE7EB /* mavlink_msg_mission_item_reached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_item_reached.h; sourceTree = "<group>"; };
+		F6452C1E1EEAE28400AFE7EB /* mavlink_msg_mission_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request.h; sourceTree = "<group>"; };
+		F6452C1F1EEAE28400AFE7EB /* mavlink_msg_mission_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request_list.h; sourceTree = "<group>"; };
+		F6452C201EEAE28400AFE7EB /* mavlink_msg_mission_request_partial_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_request_partial_list.h; sourceTree = "<group>"; };
+		F6452C211EEAE28400AFE7EB /* mavlink_msg_mission_set_current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_set_current.h; sourceTree = "<group>"; };
+		F6452C221EEAE28400AFE7EB /* mavlink_msg_mission_write_partial_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_mission_write_partial_list.h; sourceTree = "<group>"; };
+		F6452C231EEAE28400AFE7EB /* mavlink_msg_named_value_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_named_value_float.h; sourceTree = "<group>"; };
+		F6452C241EEAE28400AFE7EB /* mavlink_msg_named_value_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_named_value_int.h; sourceTree = "<group>"; };
+		F6452C251EEAE28400AFE7EB /* mavlink_msg_nav_controller_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_nav_controller_output.h; sourceTree = "<group>"; };
+		F6452C261EEAE28400AFE7EB /* mavlink_msg_optical_flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_optical_flow.h; sourceTree = "<group>"; };
+		F6452C271EEAE28400AFE7EB /* mavlink_msg_param_request_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_request_list.h; sourceTree = "<group>"; };
+		F6452C281EEAE28400AFE7EB /* mavlink_msg_param_request_read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_request_read.h; sourceTree = "<group>"; };
+		F6452C291EEAE28400AFE7EB /* mavlink_msg_param_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_set.h; sourceTree = "<group>"; };
+		F6452C2A1EEAE28400AFE7EB /* mavlink_msg_param_value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_param_value.h; sourceTree = "<group>"; };
+		F6452C2B1EEAE28400AFE7EB /* mavlink_msg_ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_ping.h; sourceTree = "<group>"; };
+		F6452C2C1EEAE28400AFE7EB /* mavlink_msg_raw_imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_raw_imu.h; sourceTree = "<group>"; };
+		F6452C2D1EEAE28400AFE7EB /* mavlink_msg_raw_pressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_raw_pressure.h; sourceTree = "<group>"; };
+		F6452C2E1EEAE28400AFE7EB /* mavlink_msg_rc_channels_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_override.h; sourceTree = "<group>"; };
+		F6452C2F1EEAE28400AFE7EB /* mavlink_msg_rc_channels_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_raw.h; sourceTree = "<group>"; };
+		F6452C301EEAE28400AFE7EB /* mavlink_msg_rc_channels_scaled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_rc_channels_scaled.h; sourceTree = "<group>"; };
+		F6452C311EEAE28400AFE7EB /* mavlink_msg_request_data_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_request_data_stream.h; sourceTree = "<group>"; };
+		F6452C321EEAE28400AFE7EB /* mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h; sourceTree = "<group>"; };
+		F6452C331EEAE28400AFE7EB /* mavlink_msg_roll_pitch_yaw_thrust_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_roll_pitch_yaw_thrust_setpoint.h; sourceTree = "<group>"; };
+		F6452C341EEAE28400AFE7EB /* mavlink_msg_safety_allowed_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_safety_allowed_area.h; sourceTree = "<group>"; };
+		F6452C351EEAE28400AFE7EB /* mavlink_msg_safety_set_allowed_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_safety_set_allowed_area.h; sourceTree = "<group>"; };
+		F6452C361EEAE28400AFE7EB /* mavlink_msg_scaled_imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_scaled_imu.h; sourceTree = "<group>"; };
+		F6452C371EEAE28400AFE7EB /* mavlink_msg_scaled_pressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_scaled_pressure.h; sourceTree = "<group>"; };
+		F6452C381EEAE28400AFE7EB /* mavlink_msg_servo_output_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_servo_output_raw.h; sourceTree = "<group>"; };
+		F6452C391EEAE28400AFE7EB /* mavlink_msg_set_global_position_setpoint_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_global_position_setpoint_int.h; sourceTree = "<group>"; };
+		F6452C3A1EEAE28400AFE7EB /* mavlink_msg_set_gps_global_origin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_gps_global_origin.h; sourceTree = "<group>"; };
+		F6452C3B1EEAE28400AFE7EB /* mavlink_msg_set_local_position_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_local_position_setpoint.h; sourceTree = "<group>"; };
+		F6452C3C1EEAE28400AFE7EB /* mavlink_msg_set_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_mode.h; sourceTree = "<group>"; };
+		F6452C3D1EEAE28400AFE7EB /* mavlink_msg_set_quad_motors_setpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_quad_motors_setpoint.h; sourceTree = "<group>"; };
+		F6452C3E1EEAE28400AFE7EB /* mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h; sourceTree = "<group>"; };
+		F6452C3F1EEAE28400AFE7EB /* mavlink_msg_set_roll_pitch_yaw_speed_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_roll_pitch_yaw_speed_thrust.h; sourceTree = "<group>"; };
+		F6452C401EEAE28400AFE7EB /* mavlink_msg_set_roll_pitch_yaw_thrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_set_roll_pitch_yaw_thrust.h; sourceTree = "<group>"; };
+		F6452C411EEAE28400AFE7EB /* mavlink_msg_state_correction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_state_correction.h; sourceTree = "<group>"; };
+		F6452C421EEAE28400AFE7EB /* mavlink_msg_statustext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_statustext.h; sourceTree = "<group>"; };
+		F6452C431EEAE28400AFE7EB /* mavlink_msg_sys_status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_sys_status.h; sourceTree = "<group>"; };
+		F6452C441EEAE28400AFE7EB /* mavlink_msg_system_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_system_time.h; sourceTree = "<group>"; };
+		F6452C451EEAE28400AFE7EB /* mavlink_msg_vfr_hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vfr_hud.h; sourceTree = "<group>"; };
+		F6452C461EEAE28400AFE7EB /* mavlink_msg_vicon_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vicon_position_estimate.h; sourceTree = "<group>"; };
+		F6452C471EEAE28400AFE7EB /* mavlink_msg_vision_position_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vision_position_estimate.h; sourceTree = "<group>"; };
+		F6452C481EEAE28400AFE7EB /* mavlink_msg_vision_speed_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mavlink_msg_vision_speed_estimate.h; sourceTree = "<group>"; };
+		F6452C491EEAE28400AFE7EB /* testsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testsuite.h; sourceTree = "<group>"; };
+		F6452C4A1EEAE28400AFE7EB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		F6543A501DE979C7000FBF48 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		F6543A521DE979C7000FBF48 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		F6543A541DE979C7000FBF48 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		F6543A551DE979C7000FBF48 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		F6543A561DE979C7000FBF48 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		F6543A571DE979C7000FBF48 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		F6543A591DE979C7000FBF48 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		F6543A5A1DE979C7000FBF48 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		F6543A5B1DE979C7000FBF48 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		F6543A5C1DE979C7000FBF48 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36DDE8771D010EC800B34C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36DDE8711D010EC800B34C8D = {
+			isa = PBXGroup;
+			children = (
+				F6543A4F1DE979C7000FBF48 /* CocoaAsyncSocket */,
+				36DDE87C1D010EC800B34C8D /* keyshareManageTcpAndMavlink */,
+				36DDE87B1D010EC800B34C8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36DDE87B1D010EC800B34C8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36DDE87A1D010EC800B34C8D /* libMavlinkProtocol.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36DDE87C1D010EC800B34C8D /* keyshareManageTcpAndMavlink */ = {
+			isa = PBXGroup;
+			children = (
+				36DDEA111D01104800B34C8D /* tcp */,
+				36DDE8861D01102A00B34C8D /* 1.0.9 */,
+				36DDE87D1D010EC800B34C8D /* MavlinkProtocol.h */,
+				36DDE87F1D010EC800B34C8D /* MavlinkProtocol.m */,
+			);
+			path = keyshareManageTcpAndMavlink;
+			sourceTree = "<group>";
+		};
+		36DDE8861D01102A00B34C8D /* 1.0.9 */ = {
+			isa = PBXGroup;
+			children = (
+				F6452AA81EEAE27C00AFE7EB /* ardupilotmega */,
+				36DDE95C1D01102A00B34C8D /* checksum.h */,
+				F6452BF81EEAE28400AFE7EB /* common */,
+				36DDE9AE1D01102B00B34C8D /* mavlink_conversions.h */,
+				36DDE9AF1D01102B00B34C8D /* mavlink_helpers.h */,
+				36DDE9B01D01102B00B34C8D /* mavlink_types.h */,
+				36DDE9B11D01102B00B34C8D /* protocol.h */,
+			);
+			path = 1.0.9;
+			sourceTree = "<group>";
+		};
+		36DDEA111D01104800B34C8D /* tcp */ = {
+			isa = PBXGroup;
+			children = (
+				36DDEA121D01104800B34C8D /* keyshareTcpSocket.h */,
+				36DDEA131D01104800B34C8D /* keyshareTcpSocket.m */,
+			);
+			path = tcp;
+			sourceTree = "<group>";
+		};
+		F6452AA81EEAE27C00AFE7EB /* ardupilotmega */ = {
+			isa = PBXGroup;
+			children = (
+				F6452AA91EEAE27C00AFE7EB /* ardupilotmega.h */,
+				F6452AAA1EEAE27C00AFE7EB /* mavlink.h */,
+				F6452AAB1EEAE27C00AFE7EB /* mavlink_msg_ahrs.h */,
+				F6452AAC1EEAE27C00AFE7EB /* mavlink_msg_ap_adc.h */,
+				F6452AAD1EEAE27C00AFE7EB /* mavlink_msg_digicam_configure.h */,
+				F6452AAE1EEAE27C00AFE7EB /* mavlink_msg_digicam_control.h */,
+				F6452AAF1EEAE27C00AFE7EB /* mavlink_msg_exceute.h */,
+				F6452AB01EEAE27C00AFE7EB /* mavlink_msg_exceute_return.h */,
+				F6452AB11EEAE27C00AFE7EB /* mavlink_msg_fence_fetch_point.h */,
+				F6452AB21EEAE27C00AFE7EB /* mavlink_msg_fence_point.h */,
+				F6452AB31EEAE27C00AFE7EB /* mavlink_msg_fence_status.h */,
+				F6452AB41EEAE27C00AFE7EB /* mavlink_msg_hwstatus.h */,
+				F6452AB51EEAE27C00AFE7EB /* mavlink_msg_log_data.h */,
+				F6452AB61EEAE27C00AFE7EB /* mavlink_msg_log_entry.h */,
+				F6452AB71EEAE27C00AFE7EB /* mavlink_msg_log_request_data.h */,
+				F6452AB81EEAE27C00AFE7EB /* mavlink_msg_log_request_list.h */,
+				F6452AB91EEAE27C00AFE7EB /* mavlink_msg_meminfo.h */,
+				F6452ABA1EEAE27C00AFE7EB /* mavlink_msg_mission_message.h */,
+				F6452ABB1EEAE27C00AFE7EB /* mavlink_msg_mount_configure.h */,
+				F6452ABC1EEAE27C00AFE7EB /* mavlink_msg_mount_control.h */,
+				F6452ABD1EEAE27C00AFE7EB /* mavlink_msg_mount_status.h */,
+				F6452ABE1EEAE27C00AFE7EB /* mavlink_msg_radio.h */,
+				F6452ABF1EEAE27C00AFE7EB /* mavlink_msg_sensor_offsets.h */,
+				F6452AC01EEAE27C00AFE7EB /* mavlink_msg_set_mag_offsets.h */,
+				F6452AC11EEAE27C00AFE7EB /* mavlink_msg_simstate.h */,
+				F6452AC21EEAE27C00AFE7EB /* MVArdupilotmegaMessages.h */,
+				F6452AC31EEAE27C00AFE7EB /* MVCommonMessages.h */,
+				F6452AC41EEAE27C00AFE7EB /* MVMavlink.h */,
+				F6452AC51EEAE27C00AFE7EB /* MVMavlink.m */,
+				F6452AC61EEAE27C00AFE7EB /* MVMessage.h */,
+				F6452AC71EEAE27C00AFE7EB /* MVMessage.m */,
+				F6452AC81EEAE27C00AFE7EB /* MVMessageAhrs.h */,
+				F6452AC91EEAE27C00AFE7EB /* MVMessageAhrs.m */,
+				F6452ACA1EEAE27C00AFE7EB /* MVMessageApAdc.h */,
+				F6452ACB1EEAE27C00AFE7EB /* MVMessageApAdc.m */,
+				F6452ACC1EEAE27C00AFE7EB /* MVMessageAttitude.h */,
+				F6452ACD1EEAE27C00AFE7EB /* MVMessageAttitude.m */,
+				F6452ACE1EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.h */,
+				F6452ACF1EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.m */,
+				F6452AD01EEAE27C00AFE7EB /* MVMessageAuthKey.h */,
+				F6452AD11EEAE27C00AFE7EB /* MVMessageAuthKey.m */,
+				F6452AD21EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.h */,
+				F6452AD31EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.m */,
+				F6452AD41EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.h */,
+				F6452AD51EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.m */,
+				F6452AD61EEAE27C00AFE7EB /* MVMessageCommandAck.h */,
+				F6452AD71EEAE27C00AFE7EB /* MVMessageCommandAck.m */,
+				F6452AD81EEAE27C00AFE7EB /* MVMessageCommandLong.h */,
+				F6452AD91EEAE27C00AFE7EB /* MVMessageCommandLong.m */,
+				F6452ADA1EEAE27C00AFE7EB /* MVMessageDataStream.h */,
+				F6452ADB1EEAE27C00AFE7EB /* MVMessageDataStream.m */,
+				F6452ADC1EEAE27C00AFE7EB /* MVMessageDebug.h */,
+				F6452ADD1EEAE27C00AFE7EB /* MVMessageDebug.m */,
+				F6452ADE1EEAE27C00AFE7EB /* MVMessageDebugVect.h */,
+				F6452ADF1EEAE27C00AFE7EB /* MVMessageDebugVect.m */,
+				F6452AE01EEAE27C00AFE7EB /* MVMessageDigicamConfigure.h */,
+				F6452AE11EEAE27C00AFE7EB /* MVMessageDigicamConfigure.m */,
+				F6452AE21EEAE27C00AFE7EB /* MVMessageDigicamControl.h */,
+				F6452AE31EEAE27C00AFE7EB /* MVMessageDigicamControl.m */,
+				F6452AE41EEAE27C00AFE7EB /* MVMessageexceute.h */,
+				F6452AE51EEAE27C00AFE7EB /* MVMessageexceute.m */,
+				F6452AE61EEAE27C00AFE7EB /* MVMessageexceutereturn.h */,
+				F6452AE71EEAE27C00AFE7EB /* MVMessageexceutereturn.m */,
+				F6452AE81EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.h */,
+				F6452AE91EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.m */,
+				F6452AEA1EEAE27C00AFE7EB /* MVMessageFencePoint.h */,
+				F6452AEB1EEAE27C00AFE7EB /* MVMessageFencePoint.m */,
+				F6452AEC1EEAE27C00AFE7EB /* MVMessageFenceStatus.h */,
+				F6452AED1EEAE27C00AFE7EB /* MVMessageFenceStatus.m */,
+				F6452AEE1EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.h */,
+				F6452AEF1EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.m */,
+				F6452AF01EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.h */,
+				F6452AF11EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.m */,
+				F6452AF21EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.h */,
+				F6452AF31EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.m */,
+				F6452AF41EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.h */,
+				F6452AF51EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.m */,
+				F6452AF61EEAE27C00AFE7EB /* MVMessageGpsRawInt.h */,
+				F6452AF71EEAE27C00AFE7EB /* MVMessageGpsRawInt.m */,
+				F6452AF81EEAE27C00AFE7EB /* MVMessageGpsStatus.h */,
+				F6452AF91EEAE27C00AFE7EB /* MVMessageGpsStatus.m */,
+				F6452AFA1EEAE27C00AFE7EB /* MVMessageHeartbeat.h */,
+				F6452AFB1EEAE27C00AFE7EB /* MVMessageHeartbeat.m */,
+				F6452AFC1EEAE27C00AFE7EB /* MVMessageHilControls.h */,
+				F6452AFD1EEAE27C00AFE7EB /* MVMessageHilControls.m */,
+				F6452AFE1EEAE27C00AFE7EB /* MVMessageHilRcInputsRaw.h */,
+				F6452AFF1EEAE27C00AFE7EB /* MVMessageHilRcInputsRaw.m */,
+				F6452B001EEAE27C00AFE7EB /* MVMessageHilState.h */,
+				F6452B011EEAE27C00AFE7EB /* MVMessageHilState.m */,
+				F6452B021EEAE27C00AFE7EB /* MVMessageHwstatus.h */,
+				F6452B031EEAE27C00AFE7EB /* MVMessageHwstatus.m */,
+				F6452B041EEAE27C00AFE7EB /* MVMessagek2compasscali.h */,
+				F6452B051EEAE27C00AFE7EB /* MVMessagek2compasscali.m */,
+				F6452B061EEAE27C00AFE7EB /* MVMessagek2message.h */,
+				F6452B071EEAE27C00AFE7EB /* MVMessagek2message.m */,
+				F6452B081EEAE27C00AFE7EB /* MVMessagek2messageack.h */,
+				F6452B091EEAE27C00AFE7EB /* MVMessagek2messageack.m */,
+				F6452B0A1EEAE27C00AFE7EB /* MVMessageLocalPositionNed.h */,
+				F6452B0B1EEAE27C00AFE7EB /* MVMessageLocalPositionNed.m */,
+				F6452B0C1EEAE27C00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.h */,
+				F6452B0D1EEAE27C00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.m */,
+				F6452B0E1EEAE27C00AFE7EB /* MVMessageLocalPositionSetpoint.h */,
+				F6452B0F1EEAE27C00AFE7EB /* MVMessageLocalPositionSetpoint.m */,
+				F6452B101EEAE27C00AFE7EB /* MVMessageLogData.h */,
+				F6452B111EEAE27C00AFE7EB /* MVMessageLogData.m */,
+				F6452B121EEAE27C00AFE7EB /* MVMessageLogEntry.h */,
+				F6452B131EEAE27C00AFE7EB /* MVMessageLogEntry.m */,
+				F6452B141EEAE27C00AFE7EB /* MVMessageLogRequestData.h */,
+				F6452B151EEAE27C00AFE7EB /* MVMessageLogRequestData.m */,
+				F6452B161EEAE27C00AFE7EB /* MVMessageLogRequestList.h */,
+				F6452B171EEAE27C00AFE7EB /* MVMessageLogRequestList.m */,
+				F6452B181EEAE27C00AFE7EB /* MVMessageManualControl.h */,
+				F6452B191EEAE27C00AFE7EB /* MVMessageManualControl.m */,
+				F6452B1A1EEAE27C00AFE7EB /* MVMessageMeminfo.h */,
+				F6452B1B1EEAE27C00AFE7EB /* MVMessageMeminfo.m */,
+				F6452B1C1EEAE27C00AFE7EB /* MVMessageMemoryVect.h */,
+				F6452B1D1EEAE27C00AFE7EB /* MVMessageMemoryVect.m */,
+				F6452B1E1EEAE27C00AFE7EB /* MVMessagemission_message.h */,
+				F6452B1F1EEAE27C00AFE7EB /* MVMessagemission_message.m */,
+				F6452B201EEAE27C00AFE7EB /* MVMessageMissionAck.h */,
+				F6452B211EEAE27C00AFE7EB /* MVMessageMissionAck.m */,
+				F6452B221EEAE27C00AFE7EB /* MVMessageMissionClearAll.h */,
+				F6452B231EEAE27C00AFE7EB /* MVMessageMissionClearAll.m */,
+				F6452B241EEAE27C00AFE7EB /* MVMessageMissionCount.h */,
+				F6452B251EEAE27C00AFE7EB /* MVMessageMissionCount.m */,
+				F6452B261EEAE27C00AFE7EB /* MVMessageMissionCurrent.h */,
+				F6452B271EEAE27C00AFE7EB /* MVMessageMissionCurrent.m */,
+				F6452B281EEAE27C00AFE7EB /* MVMessageMissionItem.h */,
+				F6452B291EEAE27C00AFE7EB /* MVMessageMissionItem.m */,
+				F6452B2A1EEAE27C00AFE7EB /* MVMessageMissionItemReached.h */,
+				F6452B2B1EEAE27C00AFE7EB /* MVMessageMissionItemReached.m */,
+				F6452B2C1EEAE27C00AFE7EB /* MVMessageMissionRequest.h */,
+				F6452B2D1EEAE27C00AFE7EB /* MVMessageMissionRequest.m */,
+				F6452B2E1EEAE27C00AFE7EB /* MVMessageMissionRequestList.h */,
+				F6452B2F1EEAE27C00AFE7EB /* MVMessageMissionRequestList.m */,
+				F6452B301EEAE27C00AFE7EB /* MVMessageMissionRequestPartialList.h */,
+				F6452B311EEAE27C00AFE7EB /* MVMessageMissionRequestPartialList.m */,
+				F6452B321EEAE27C00AFE7EB /* MVMessageMissionSetCurrent.h */,
+				F6452B331EEAE27C00AFE7EB /* MVMessageMissionSetCurrent.m */,
+				F6452B341EEAE27C00AFE7EB /* MVMessageMissionWritePartialList.h */,
+				F6452B351EEAE27C00AFE7EB /* MVMessageMissionWritePartialList.m */,
+				F6452B361EEAE27C00AFE7EB /* MVMessageMountConfigure.h */,
+				F6452B371EEAE27C00AFE7EB /* MVMessageMountConfigure.m */,
+				F6452B381EEAE27C00AFE7EB /* MVMessageMountControl.h */,
+				F6452B391EEAE27C00AFE7EB /* MVMessageMountControl.m */,
+				F6452B3A1EEAE27C00AFE7EB /* MVMessageMountStatus.h */,
+				F6452B3B1EEAE27C00AFE7EB /* MVMessageMountStatus.m */,
+				F6452B3C1EEAE27C00AFE7EB /* MVMessageNamedValueFloat.h */,
+				F6452B3D1EEAE27C00AFE7EB /* MVMessageNamedValueFloat.m */,
+				F6452B3E1EEAE27C00AFE7EB /* MVMessageNamedValueInt.h */,
+				F6452B3F1EEAE27C00AFE7EB /* MVMessageNamedValueInt.m */,
+				F6452B401EEAE27C00AFE7EB /* MVMessageNavControllerOutput.h */,
+				F6452B411EEAE27C00AFE7EB /* MVMessageNavControllerOutput.m */,
+				F6452B421EEAE27C00AFE7EB /* MVMessageOpticalFlow.h */,
+				F6452B431EEAE27C00AFE7EB /* MVMessageOpticalFlow.m */,
+				F6452B441EEAE27C00AFE7EB /* MVMessageParamRequestList.h */,
+				F6452B451EEAE27C00AFE7EB /* MVMessageParamRequestList.m */,
+				F6452B461EEAE27C00AFE7EB /* MVMessageParamRequestRead.h */,
+				F6452B471EEAE27C00AFE7EB /* MVMessageParamRequestRead.m */,
+				F6452B481EEAE27C00AFE7EB /* MVMessageParamSet.h */,
+				F6452B491EEAE27C00AFE7EB /* MVMessageParamSet.m */,
+				F6452B4A1EEAE27C00AFE7EB /* MVMessageParamValue.h */,
+				F6452B4B1EEAE27C00AFE7EB /* MVMessageParamValue.m */,
+				F6452B4C1EEAE27C00AFE7EB /* MVMessagePing.h */,
+				F6452B4D1EEAE27C00AFE7EB /* MVMessagePing.m */,
+				F6452B4E1EEAE27C00AFE7EB /* MVMessageRadio.h */,
+				F6452B4F1EEAE27C00AFE7EB /* MVMessageRadio.m */,
+				F6452B501EEAE27C00AFE7EB /* MVMessageRawImu.h */,
+				F6452B511EEAE27C00AFE7EB /* MVMessageRawImu.m */,
+				F6452B521EEAE27C00AFE7EB /* MVMessageRawPressure.h */,
+				F6452B531EEAE27C00AFE7EB /* MVMessageRawPressure.m */,
+				F6452B541EEAE27C00AFE7EB /* MVMessageRcChannelsOverride.h */,
+				F6452B551EEAE27C00AFE7EB /* MVMessageRcChannelsOverride.m */,
+				F6452B561EEAE27C00AFE7EB /* MVMessageRcChannelsRaw.h */,
+				F6452B571EEAE27C00AFE7EB /* MVMessageRcChannelsRaw.m */,
+				F6452B581EEAE27C00AFE7EB /* MVMessageRcChannelsScaled.h */,
+				F6452B591EEAE27C00AFE7EB /* MVMessageRcChannelsScaled.m */,
+				F6452B5A1EEAE27C00AFE7EB /* MVMessageRequestDataStream.h */,
+				F6452B5B1EEAE27C00AFE7EB /* MVMessageRequestDataStream.m */,
+				F6452B5C1EEAE27C00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.h */,
+				F6452B5D1EEAE27C00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.m */,
+				F6452B5E1EEAE27C00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.h */,
+				F6452B5F1EEAE27C00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.m */,
+				F6452B601EEAE27C00AFE7EB /* MVMessageSafetyAllowedArea.h */,
+				F6452B611EEAE27C00AFE7EB /* MVMessageSafetyAllowedArea.m */,
+				F6452B621EEAE27C00AFE7EB /* MVMessageSafetySetAllowedArea.h */,
+				F6452B631EEAE27C00AFE7EB /* MVMessageSafetySetAllowedArea.m */,
+				F6452B641EEAE27C00AFE7EB /* MVMessageScaledImu.h */,
+				F6452B651EEAE27C00AFE7EB /* MVMessageScaledImu.m */,
+				F6452B661EEAE27C00AFE7EB /* MVMessageScaledPressure.h */,
+				F6452B671EEAE27C00AFE7EB /* MVMessageScaledPressure.m */,
+				F6452B681EEAE27C00AFE7EB /* MVMessageSensorOffsets.h */,
+				F6452B691EEAE27C00AFE7EB /* MVMessageSensorOffsets.m */,
+				F6452B6A1EEAE27C00AFE7EB /* MVMessageServoOutputRaw.h */,
+				F6452B6B1EEAE27C00AFE7EB /* MVMessageServoOutputRaw.m */,
+				F6452B6C1EEAE27C00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.h */,
+				F6452B6D1EEAE27C00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.m */,
+				F6452B6E1EEAE27C00AFE7EB /* MVMessageSetGpsGlobalOrigin.h */,
+				F6452B6F1EEAE27C00AFE7EB /* MVMessageSetGpsGlobalOrigin.m */,
+				F6452B701EEAE27C00AFE7EB /* MVMessageSetLocalPositionSetpoint.h */,
+				F6452B711EEAE27C00AFE7EB /* MVMessageSetLocalPositionSetpoint.m */,
+				F6452B721EEAE27C00AFE7EB /* MVMessageSetMagOffsets.h */,
+				F6452B731EEAE27C00AFE7EB /* MVMessageSetMagOffsets.m */,
+				F6452B741EEAE27C00AFE7EB /* MVMessageSetMode.h */,
+				F6452B751EEAE27C00AFE7EB /* MVMessageSetMode.m */,
+				F6452B761EEAE27C00AFE7EB /* MVMessageSetQuadMotorsSetpoint.h */,
+				F6452B771EEAE27C00AFE7EB /* MVMessageSetQuadMotorsSetpoint.m */,
+				F6452B781EEAE27C00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.h */,
+				F6452B791EEAE27C00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.m */,
+				F6452B7A1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.h */,
+				F6452B7B1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.m */,
+				F6452B7C1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawThrust.h */,
+				F6452B7D1EEAE27C00AFE7EB /* MVMessageSetRollPitchYawThrust.m */,
+				F6452B7E1EEAE27C00AFE7EB /* MVMessageSimstate.h */,
+				F6452B7F1EEAE27C00AFE7EB /* MVMessageSimstate.m */,
+				F6452B801EEAE27C00AFE7EB /* MVMessageStateCorrection.h */,
+				F6452B811EEAE27C00AFE7EB /* MVMessageStateCorrection.m */,
+				F6452B821EEAE27C00AFE7EB /* MVMessageStatustext.h */,
+				F6452B831EEAE27C00AFE7EB /* MVMessageStatustext.m */,
+				F6452B841EEAE27C00AFE7EB /* MVMessageSysStatus.h */,
+				F6452B851EEAE27C00AFE7EB /* MVMessageSysStatus.m */,
+				F6452B861EEAE27C00AFE7EB /* MVMessageSystemTime.h */,
+				F6452B871EEAE27C00AFE7EB /* MVMessageSystemTime.m */,
+				F6452B881EEAE27C00AFE7EB /* MVMessageVfrHud.h */,
+				F6452B891EEAE27C00AFE7EB /* MVMessageVfrHud.m */,
+				F6452B8A1EEAE27C00AFE7EB /* MVMessageViconPositionEstimate.h */,
+				F6452B8B1EEAE27C00AFE7EB /* MVMessageViconPositionEstimate.m */,
+				F6452B8C1EEAE27C00AFE7EB /* MVMessageVisionPositionEstimate.h */,
+				F6452B8D1EEAE27C00AFE7EB /* MVMessageVisionPositionEstimate.m */,
+				F6452B8E1EEAE27C00AFE7EB /* MVMessageVisionSpeedEstimate.h */,
+				F6452B8F1EEAE27C00AFE7EB /* MVMessageVisionSpeedEstimate.m */,
+				F6452B901EEAE27C00AFE7EB /* testsuite.h */,
+				F6452B911EEAE27C00AFE7EB /* version.h */,
+			);
+			path = ardupilotmega;
+			sourceTree = "<group>";
+		};
+		F6452BF81EEAE28400AFE7EB /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F6452BF91EEAE28400AFE7EB /* common.h */,
+				F6452BFA1EEAE28400AFE7EB /* mavlink_msg_attitude.h */,
+				F6452BFB1EEAE28400AFE7EB /* mavlink_msg_attitude_quaternion.h */,
+				F6452BFC1EEAE28400AFE7EB /* mavlink_msg_auth_key.h */,
+				F6452BFD1EEAE28400AFE7EB /* mavlink_msg_change_operator_control.h */,
+				F6452BFE1EEAE28400AFE7EB /* mavlink_msg_change_operator_control_ack.h */,
+				F6452BFF1EEAE28400AFE7EB /* mavlink_msg_command_ack.h */,
+				F6452C001EEAE28400AFE7EB /* mavlink_msg_command_long.h */,
+				F6452C011EEAE28400AFE7EB /* mavlink_msg_data_stream.h */,
+				F6452C021EEAE28400AFE7EB /* mavlink_msg_debug.h */,
+				F6452C031EEAE28400AFE7EB /* mavlink_msg_debug_vect.h */,
+				F6452C041EEAE28400AFE7EB /* mavlink_msg_global_position_int.h */,
+				F6452C051EEAE28400AFE7EB /* mavlink_msg_global_position_setpoint_int.h */,
+				F6452C061EEAE28400AFE7EB /* mavlink_msg_global_vision_position_estimate.h */,
+				F6452C071EEAE28400AFE7EB /* mavlink_msg_gps_global_origin.h */,
+				F6452C081EEAE28400AFE7EB /* mavlink_msg_gps_raw_int.h */,
+				F6452C091EEAE28400AFE7EB /* mavlink_msg_gps_status.h */,
+				F6452C0A1EEAE28400AFE7EB /* mavlink_msg_heartbeat.h */,
+				F6452C0B1EEAE28400AFE7EB /* mavlink_msg_hil_controls.h */,
+				F6452C0C1EEAE28400AFE7EB /* mavlink_msg_hil_rc_inputs_raw.h */,
+				F6452C0D1EEAE28400AFE7EB /* mavlink_msg_hil_state.h */,
+				F6452C0E1EEAE28400AFE7EB /* mavlink_msg_k2_compass_cali.h */,
+				F6452C0F1EEAE28400AFE7EB /* mavlink_msg_k2_message.h */,
+				F6452C101EEAE28400AFE7EB /* mavlink_msg_k2_message_ack.h */,
+				F6452C111EEAE28400AFE7EB /* mavlink_msg_local_position_ned.h */,
+				F6452C121EEAE28400AFE7EB /* mavlink_msg_local_position_ned_system_global_offset.h */,
+				F6452C131EEAE28400AFE7EB /* mavlink_msg_local_position_setpoint.h */,
+				F6452C141EEAE28400AFE7EB /* mavlink_msg_log_entry.h */,
+				F6452C151EEAE28400AFE7EB /* mavlink_msg_log_request_list.h */,
+				F6452C161EEAE28400AFE7EB /* mavlink_msg_manual_control.h */,
+				F6452C171EEAE28400AFE7EB /* mavlink_msg_memory_vect.h */,
+				F6452C181EEAE28400AFE7EB /* mavlink_msg_mission_ack.h */,
+				F6452C191EEAE28400AFE7EB /* mavlink_msg_mission_clear_all.h */,
+				F6452C1A1EEAE28400AFE7EB /* mavlink_msg_mission_count.h */,
+				F6452C1B1EEAE28400AFE7EB /* mavlink_msg_mission_current.h */,
+				F6452C1C1EEAE28400AFE7EB /* mavlink_msg_mission_item.h */,
+				F6452C1D1EEAE28400AFE7EB /* mavlink_msg_mission_item_reached.h */,
+				F6452C1E1EEAE28400AFE7EB /* mavlink_msg_mission_request.h */,
+				F6452C1F1EEAE28400AFE7EB /* mavlink_msg_mission_request_list.h */,
+				F6452C201EEAE28400AFE7EB /* mavlink_msg_mission_request_partial_list.h */,
+				F6452C211EEAE28400AFE7EB /* mavlink_msg_mission_set_current.h */,
+				F6452C221EEAE28400AFE7EB /* mavlink_msg_mission_write_partial_list.h */,
+				F6452C231EEAE28400AFE7EB /* mavlink_msg_named_value_float.h */,
+				F6452C241EEAE28400AFE7EB /* mavlink_msg_named_value_int.h */,
+				F6452C251EEAE28400AFE7EB /* mavlink_msg_nav_controller_output.h */,
+				F6452C261EEAE28400AFE7EB /* mavlink_msg_optical_flow.h */,
+				F6452C271EEAE28400AFE7EB /* mavlink_msg_param_request_list.h */,
+				F6452C281EEAE28400AFE7EB /* mavlink_msg_param_request_read.h */,
+				F6452C291EEAE28400AFE7EB /* mavlink_msg_param_set.h */,
+				F6452C2A1EEAE28400AFE7EB /* mavlink_msg_param_value.h */,
+				F6452C2B1EEAE28400AFE7EB /* mavlink_msg_ping.h */,
+				F6452C2C1EEAE28400AFE7EB /* mavlink_msg_raw_imu.h */,
+				F6452C2D1EEAE28400AFE7EB /* mavlink_msg_raw_pressure.h */,
+				F6452C2E1EEAE28400AFE7EB /* mavlink_msg_rc_channels_override.h */,
+				F6452C2F1EEAE28400AFE7EB /* mavlink_msg_rc_channels_raw.h */,
+				F6452C301EEAE28400AFE7EB /* mavlink_msg_rc_channels_scaled.h */,
+				F6452C311EEAE28400AFE7EB /* mavlink_msg_request_data_stream.h */,
+				F6452C321EEAE28400AFE7EB /* mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h */,
+				F6452C331EEAE28400AFE7EB /* mavlink_msg_roll_pitch_yaw_thrust_setpoint.h */,
+				F6452C341EEAE28400AFE7EB /* mavlink_msg_safety_allowed_area.h */,
+				F6452C351EEAE28400AFE7EB /* mavlink_msg_safety_set_allowed_area.h */,
+				F6452C361EEAE28400AFE7EB /* mavlink_msg_scaled_imu.h */,
+				F6452C371EEAE28400AFE7EB /* mavlink_msg_scaled_pressure.h */,
+				F6452C381EEAE28400AFE7EB /* mavlink_msg_servo_output_raw.h */,
+				F6452C391EEAE28400AFE7EB /* mavlink_msg_set_global_position_setpoint_int.h */,
+				F6452C3A1EEAE28400AFE7EB /* mavlink_msg_set_gps_global_origin.h */,
+				F6452C3B1EEAE28400AFE7EB /* mavlink_msg_set_local_position_setpoint.h */,
+				F6452C3C1EEAE28400AFE7EB /* mavlink_msg_set_mode.h */,
+				F6452C3D1EEAE28400AFE7EB /* mavlink_msg_set_quad_motors_setpoint.h */,
+				F6452C3E1EEAE28400AFE7EB /* mavlink_msg_set_quad_swarm_roll_pitch_yaw_thrust.h */,
+				F6452C3F1EEAE28400AFE7EB /* mavlink_msg_set_roll_pitch_yaw_speed_thrust.h */,
+				F6452C401EEAE28400AFE7EB /* mavlink_msg_set_roll_pitch_yaw_thrust.h */,
+				F6452C411EEAE28400AFE7EB /* mavlink_msg_state_correction.h */,
+				F6452C421EEAE28400AFE7EB /* mavlink_msg_statustext.h */,
+				F6452C431EEAE28400AFE7EB /* mavlink_msg_sys_status.h */,
+				F6452C441EEAE28400AFE7EB /* mavlink_msg_system_time.h */,
+				F6452C451EEAE28400AFE7EB /* mavlink_msg_vfr_hud.h */,
+				F6452C461EEAE28400AFE7EB /* mavlink_msg_vicon_position_estimate.h */,
+				F6452C471EEAE28400AFE7EB /* mavlink_msg_vision_position_estimate.h */,
+				F6452C481EEAE28400AFE7EB /* mavlink_msg_vision_speed_estimate.h */,
+				F6452C491EEAE28400AFE7EB /* testsuite.h */,
+				F6452C4A1EEAE28400AFE7EB /* version.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F6543A4F1DE979C7000FBF48 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				F6543A501DE979C7000FBF48 /* README.markdown */,
+				F6543A511DE979C7000FBF48 /* Source */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		F6543A511DE979C7000FBF48 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F6543A521DE979C7000FBF48 /* CocoaAsyncSocket.h */,
+				F6543A531DE979C7000FBF48 /* GCD */,
+				F6543A581DE979C7000FBF48 /* RunLoop */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F6543A531DE979C7000FBF48 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				F6543A541DE979C7000FBF48 /* GCDAsyncSocket.h */,
+				F6543A551DE979C7000FBF48 /* GCDAsyncSocket.m */,
+				F6543A561DE979C7000FBF48 /* GCDAsyncUdpSocket.h */,
+				F6543A571DE979C7000FBF48 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		F6543A581DE979C7000FBF48 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				F6543A591DE979C7000FBF48 /* AsyncSocket.h */,
+				F6543A5A1DE979C7000FBF48 /* AsyncSocket.m */,
+				F6543A5B1DE979C7000FBF48 /* AsyncUdpSocket.h */,
+				F6543A5C1DE979C7000FBF48 /* AsyncUdpSocket.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36DDE8791D010EC800B34C8D /* keyshareManageTcpAndMavlink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DDE8831D010EC800B34C8D /* Build configuration list for PBXNativeTarget "keyshareManageTcpAndMavlink" */;
+			buildPhases = (
+				36DDE8761D010EC800B34C8D /* Sources */,
+				36DDE8771D010EC800B34C8D /* Frameworks */,
+				36DDE8781D010EC800B34C8D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keyshareManageTcpAndMavlink;
+			productName = keyshareManageTcpAndMavlink;
+			productReference = 36DDE87A1D010EC800B34C8D /* libMavlinkProtocol.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36DDE8721D010EC800B34C8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = keyshare_maoxue;
+				TargetAttributes = {
+					36DDE8791D010EC800B34C8D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 36DDE8751D010EC800B34C8D /* Build configuration list for PBXProject "keyshareManageTcpAndMavlink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36DDE8711D010EC800B34C8D;
+			productRefGroup = 36DDE87B1D010EC800B34C8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36DDE8791D010EC800B34C8D /* keyshareManageTcpAndMavlink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36DDE8761D010EC800B34C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6452BAA1EEAE27C00AFE7EB /* MVMessageGpsGlobalOrigin.m in Sources */,
+				F6452BE11EEAE27D00AFE7EB /* MVMessageSafetySetAllowedArea.m in Sources */,
+				F6543A611DE979C7000FBF48 /* AsyncUdpSocket.m in Sources */,
+				F6452BC31EEAE27D00AFE7EB /* MVMessageMissionCurrent.m in Sources */,
+				F6543A5E1DE979C7000FBF48 /* GCDAsyncSocket.m in Sources */,
+				F6452BD91EEAE27D00AFE7EB /* MVMessageRawPressure.m in Sources */,
+				F6452BEA1EEAE27D00AFE7EB /* MVMessageSetMode.m in Sources */,
+				F6452BB71EEAE27D00AFE7EB /* MVMessageLocalPositionSetpoint.m in Sources */,
+				F6452BCE1EEAE27D00AFE7EB /* MVMessageNamedValueFloat.m in Sources */,
+				F6452BF31EEAE27D00AFE7EB /* MVMessageSystemTime.m in Sources */,
+				F6452BCB1EEAE27D00AFE7EB /* MVMessageMountConfigure.m in Sources */,
+				36DDEA141D01104800B34C8D /* keyshareTcpSocket.m in Sources */,
+				F6452BD11EEAE27D00AFE7EB /* MVMessageOpticalFlow.m in Sources */,
+				F6452B921EEAE27C00AFE7EB /* MVMavlink.m in Sources */,
+				F6452B9C1EEAE27C00AFE7EB /* MVMessageCommandLong.m in Sources */,
+				F6452B9B1EEAE27C00AFE7EB /* MVMessageCommandAck.m in Sources */,
+				F6452B941EEAE27C00AFE7EB /* MVMessageAhrs.m in Sources */,
+				F6452BE41EEAE27D00AFE7EB /* MVMessageSensorOffsets.m in Sources */,
+				F6543A601DE979C7000FBF48 /* AsyncSocket.m in Sources */,
+				F6452BE91EEAE27D00AFE7EB /* MVMessageSetMagOffsets.m in Sources */,
+				F6452BAC1EEAE27C00AFE7EB /* MVMessageGpsStatus.m in Sources */,
+				F6452BDE1EEAE27D00AFE7EB /* MVMessageRollPitchYawSpeedThrustSetpoint.m in Sources */,
+				F6452BBE1EEAE27D00AFE7EB /* MVMessageMemoryVect.m in Sources */,
+				F6452BDA1EEAE27D00AFE7EB /* MVMessageRcChannelsOverride.m in Sources */,
+				F6452BD71EEAE27D00AFE7EB /* MVMessageRadio.m in Sources */,
+				F6452BAE1EEAE27D00AFE7EB /* MVMessageHilControls.m in Sources */,
+				F6452BC01EEAE27D00AFE7EB /* MVMessageMissionAck.m in Sources */,
+				F6452BD31EEAE27D00AFE7EB /* MVMessageParamRequestRead.m in Sources */,
+				F6452BE51EEAE27D00AFE7EB /* MVMessageServoOutputRaw.m in Sources */,
+				F6452B981EEAE27C00AFE7EB /* MVMessageAuthKey.m in Sources */,
+				F6452B961EEAE27C00AFE7EB /* MVMessageAttitude.m in Sources */,
+				F6452BDD1EEAE27D00AFE7EB /* MVMessageRequestDataStream.m in Sources */,
+				F6452BA71EEAE27C00AFE7EB /* MVMessageGlobalPositionInt.m in Sources */,
+				F6452BD81EEAE27D00AFE7EB /* MVMessageRawImu.m in Sources */,
+				F6452BB91EEAE27D00AFE7EB /* MVMessageLogEntry.m in Sources */,
+				F6452BEE1EEAE27D00AFE7EB /* MVMessageSetRollPitchYawThrust.m in Sources */,
+				F6452BA61EEAE27C00AFE7EB /* MVMessageFenceStatus.m in Sources */,
+				F6452BAF1EEAE27D00AFE7EB /* MVMessageHilRcInputsRaw.m in Sources */,
+				F6452B9E1EEAE27C00AFE7EB /* MVMessageDebug.m in Sources */,
+				F6452BF61EEAE27D00AFE7EB /* MVMessageVisionPositionEstimate.m in Sources */,
+				F6452BF41EEAE27D00AFE7EB /* MVMessageVfrHud.m in Sources */,
+				F6452BC21EEAE27D00AFE7EB /* MVMessageMissionCount.m in Sources */,
+				F6452B9A1EEAE27C00AFE7EB /* MVMessageChangeOperatorControlAck.m in Sources */,
+				F6452BBD1EEAE27D00AFE7EB /* MVMessageMeminfo.m in Sources */,
+				F6452BDC1EEAE27D00AFE7EB /* MVMessageRcChannelsScaled.m in Sources */,
+				F6452BF21EEAE27D00AFE7EB /* MVMessageSysStatus.m in Sources */,
+				F6452BD41EEAE27D00AFE7EB /* MVMessageParamSet.m in Sources */,
+				F6452BE81EEAE27D00AFE7EB /* MVMessageSetLocalPositionSetpoint.m in Sources */,
+				F6452BED1EEAE27D00AFE7EB /* MVMessageSetRollPitchYawSpeedThrust.m in Sources */,
+				F6452BBF1EEAE27D00AFE7EB /* MVMessagemission_message.m in Sources */,
+				F6452BB81EEAE27D00AFE7EB /* MVMessageLogData.m in Sources */,
+				F6452BA81EEAE27C00AFE7EB /* MVMessageGlobalPositionSetpointInt.m in Sources */,
+				F6452B951EEAE27C00AFE7EB /* MVMessageApAdc.m in Sources */,
+				F6452BCF1EEAE27D00AFE7EB /* MVMessageNamedValueInt.m in Sources */,
+				F6452BB11EEAE27D00AFE7EB /* MVMessageHwstatus.m in Sources */,
+				F6452BA31EEAE27C00AFE7EB /* MVMessageexceutereturn.m in Sources */,
+				F6452BA41EEAE27C00AFE7EB /* MVMessageFenceFetchPoint.m in Sources */,
+				F6452BE21EEAE27D00AFE7EB /* MVMessageScaledImu.m in Sources */,
+				F6452BB21EEAE27D00AFE7EB /* MVMessagek2compasscali.m in Sources */,
+				F6452BC81EEAE27D00AFE7EB /* MVMessageMissionRequestPartialList.m in Sources */,
+				F6452BD61EEAE27D00AFE7EB /* MVMessagePing.m in Sources */,
+				F6452BEB1EEAE27D00AFE7EB /* MVMessageSetQuadMotorsSetpoint.m in Sources */,
+				F6452BF71EEAE27D00AFE7EB /* MVMessageVisionSpeedEstimate.m in Sources */,
+				F6452BF01EEAE27D00AFE7EB /* MVMessageStateCorrection.m in Sources */,
+				F6452B991EEAE27C00AFE7EB /* MVMessageChangeOperatorControl.m in Sources */,
+				F6452BA01EEAE27C00AFE7EB /* MVMessageDigicamConfigure.m in Sources */,
+				F6452BC61EEAE27D00AFE7EB /* MVMessageMissionRequest.m in Sources */,
+				F6543A5F1DE979C7000FBF48 /* GCDAsyncUdpSocket.m in Sources */,
+				F6452BA21EEAE27C00AFE7EB /* MVMessageexceute.m in Sources */,
+				F6452BCA1EEAE27D00AFE7EB /* MVMessageMissionWritePartialList.m in Sources */,
+				F6452BA51EEAE27C00AFE7EB /* MVMessageFencePoint.m in Sources */,
+				F6452BBC1EEAE27D00AFE7EB /* MVMessageManualControl.m in Sources */,
+				F6452BDF1EEAE27D00AFE7EB /* MVMessageRollPitchYawThrustSetpoint.m in Sources */,
+				F6452BD51EEAE27D00AFE7EB /* MVMessageParamValue.m in Sources */,
+				F6452BA11EEAE27C00AFE7EB /* MVMessageDigicamControl.m in Sources */,
+				F6452BE31EEAE27D00AFE7EB /* MVMessageScaledPressure.m in Sources */,
+				F6452BBA1EEAE27D00AFE7EB /* MVMessageLogRequestData.m in Sources */,
+				F6452BF11EEAE27D00AFE7EB /* MVMessageStatustext.m in Sources */,
+				F6452BE01EEAE27D00AFE7EB /* MVMessageSafetyAllowedArea.m in Sources */,
+				F6452BB51EEAE27D00AFE7EB /* MVMessageLocalPositionNed.m in Sources */,
+				F6452BCC1EEAE27D00AFE7EB /* MVMessageMountControl.m in Sources */,
+				F6452BBB1EEAE27D00AFE7EB /* MVMessageLogRequestList.m in Sources */,
+				F6452BB01EEAE27D00AFE7EB /* MVMessageHilState.m in Sources */,
+				F6452BD01EEAE27D00AFE7EB /* MVMessageNavControllerOutput.m in Sources */,
+				F6452BC71EEAE27D00AFE7EB /* MVMessageMissionRequestList.m in Sources */,
+				F6452BC91EEAE27D00AFE7EB /* MVMessageMissionSetCurrent.m in Sources */,
+				F6452BB41EEAE27D00AFE7EB /* MVMessagek2messageack.m in Sources */,
+				F6452B9D1EEAE27C00AFE7EB /* MVMessageDataStream.m in Sources */,
+				F6452BC41EEAE27D00AFE7EB /* MVMessageMissionItem.m in Sources */,
+				F6452BC11EEAE27D00AFE7EB /* MVMessageMissionClearAll.m in Sources */,
+				F6452BAD1EEAE27C00AFE7EB /* MVMessageHeartbeat.m in Sources */,
+				36DDE8801D010EC800B34C8D /* MavlinkProtocol.m in Sources */,
+				F6452BF51EEAE27D00AFE7EB /* MVMessageViconPositionEstimate.m in Sources */,
+				F6452BB61EEAE27D00AFE7EB /* MVMessageLocalPositionNedSystemGlobalOffset.m in Sources */,
+				F6452BE71EEAE27D00AFE7EB /* MVMessageSetGpsGlobalOrigin.m in Sources */,
+				F6452BDB1EEAE27D00AFE7EB /* MVMessageRcChannelsRaw.m in Sources */,
+				F6452BAB1EEAE27C00AFE7EB /* MVMessageGpsRawInt.m in Sources */,
+				F6452BC51EEAE27D00AFE7EB /* MVMessageMissionItemReached.m in Sources */,
+				F6452BB31EEAE27D00AFE7EB /* MVMessagek2message.m in Sources */,
+				F6452B931EEAE27C00AFE7EB /* MVMessage.m in Sources */,
+				F6543A5D1DE979C7000FBF48 /* README.markdown in Sources */,
+				F6452B9F1EEAE27C00AFE7EB /* MVMessageDebugVect.m in Sources */,
+				F6452BD21EEAE27D00AFE7EB /* MVMessageParamRequestList.m in Sources */,
+				F6452BEF1EEAE27D00AFE7EB /* MVMessageSimstate.m in Sources */,
+				F6452BCD1EEAE27D00AFE7EB /* MVMessageMountStatus.m in Sources */,
+				F6452BE61EEAE27D00AFE7EB /* MVMessageSetGlobalPositionSetpointInt.m in Sources */,
+				F6452BEC1EEAE27D00AFE7EB /* MVMessageSetQuadSwarmRollPitchYawThrust.m in Sources */,
+				F6452BA91EEAE27C00AFE7EB /* MVMessageGlobalVisionPositionEstimate.m in Sources */,
+				F6452B971EEAE27C00AFE7EB /* MVMessageAttitudeQuaternion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36DDE8811D010EC800B34C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		36DDE8821D010EC800B34C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		36DDE8841D010EC800B34C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MavlinkProtocol;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		36DDE8851D010EC800B34C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MavlinkProtocol;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36DDE8751D010EC800B34C8D /* Build configuration list for PBXProject "keyshareManageTcpAndMavlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DDE8811D010EC800B34C8D /* Debug */,
+				36DDE8821D010EC800B34C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36DDE8831D010EC800B34C8D /* Build configuration list for PBXNativeTarget "keyshareManageTcpAndMavlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DDE8841D010EC800B34C8D /* Debug */,
+				36DDE8851D010EC800B34C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36DDE8721D010EC800B34C8D /* Project object */;
+}

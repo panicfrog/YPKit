@@ -156,4 +156,22 @@
         return self;
     };
 }
+
+//添加方法
+- (UIButton *(^)(id ,SEL,UIControlEvents))addTarget_action_events_yp{
+    return ^(id target,SEL action,UIControlEvents events){
+        [self addTarget:target action:action forControlEvents:events];
+        return self;
+    };
+}
+
+- (UIButton *(^)(id,SEL,UIControlEvents))addTarget_action_events_once_yp {
+    return ^(id target,SEL action,UIControlEvents events){
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [self addTarget:target action:action forControlEvents:events];
+        });
+        return self;
+    };
+}
 @end

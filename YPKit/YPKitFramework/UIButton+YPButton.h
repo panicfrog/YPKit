@@ -46,4 +46,8 @@
 - (UIButton *(^)(UIColor *))highlightTitleColor_yp;
 - (UIButton *(^)(UIColor *))disableTitleColor_yp;
 - (UIButton *(^)(UIColor *))selectedTitleColor_yp;
+
+#pragma mark - Actions
+- (UIButton *(^)(id ,SEL,UIControlEvents))addTarget_action_events_yp;
+- (UIButton *(^)(id,SEL,UIControlEvents))addTarget_action_events_once_yp;
 @end

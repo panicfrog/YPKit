@@ -174,4 +174,19 @@
         return self;
     };
 }
+
+//添加到父视图中
+- (UIButton *(^)(UIView *))addToParentView_yp {
+    return ^(UIView *parentView) {
+        [parentView addSubview:self];
+        return self;
+    };
+}
+
+- (UIButton *(^)(UIView *))addSubview_yp {
+    return ^(UIView *subView) {
+        [self addSubview:subView];
+        return self;
+    };
+}
 @end

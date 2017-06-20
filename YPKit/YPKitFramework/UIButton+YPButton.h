@@ -50,4 +50,19 @@
 #pragma mark - Actions
 - (UIButton *(^)(id ,SEL,UIControlEvents))addTarget_action_events_yp;
 - (UIButton *(^)(id,SEL,UIControlEvents))addTarget_action_events_once_yp;
+
+- (UIButton *(^)(UIView *))addToParentView_yp {
+    return ^(UIView *parentView) {
+        [parentView addSubview:self];
+        return self;
+    };
+}
+
+#pragma mark - ParentView && SubView
+- (UIButton *(^)(UIView *))addSubview_yp {
+    return ^(UIView *subView) {
+        [self addSubview:subView];
+        return self;
+    };
+}
 @end

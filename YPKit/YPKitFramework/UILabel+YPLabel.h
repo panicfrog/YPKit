@@ -16,4 +16,21 @@
 
 + (instancetype)labelWithTextColor:(UIColor *)textColor
                               font:(UIFont *)font;
+
++ (UILabel *(^)(CGRect))creatWithFrame_yp;
+
+- (UILabel *(^)(UIFont *))font_yp;
+- (UILabel *(^)(NSString *))text_yp;
+- (UILabel *(^)(NSAttributedString *))attributedText_yp;
+- (UILabel *(^)(UIColor *))textColor_yp;
+- (UILabel *(^)(UIColor *))shadowColor_yp;
+- (UILabel *(^)(CGSize))shadowOffset_yp;
+
+- (UILabel *(^)(NSTextAlignment))textAlignment_yp;
+- (UILabel *(^)(NSInteger))numberOfLines_yp;
+
+- (UILabel *(^)(CGFloat))minimumScaleFactor_yp;
+- (UILabel *(^)(UIBaselineAdjustment))baselineAdjustment_yp;
+- (UILabel *(^)(BOOL))adjustsFontSizeToFitWidth_yp;
+
 @end

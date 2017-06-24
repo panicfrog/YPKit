@@ -9,6 +9,14 @@
 #import "UIView+YPView.h"
 
 @implementation UIView (YPView)
+- (UIImage *)snap_yp{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
+}
+
 
 - (UIView *(^)(CGFloat))cornerRadius_yp {
     return ^(CGFloat radius) {

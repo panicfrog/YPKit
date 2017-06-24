@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (YPView)
-
+- (UIImage *)snap_yp;
 - (UIView *(^)(CGFloat))cornerRadius_yp;
 - (UIView *(^)(BOOL))masksToBounds_yp;
 - (UIView *(^)(CGFloat))borderWidth_yp;
